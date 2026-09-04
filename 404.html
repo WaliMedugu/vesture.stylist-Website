@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>404 – Page Not Found | Vesture</title>
+  <link href="webflow.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      background-color: #0f0f11;
+      color: #FBF0DA;
+      font-family: 'Aeonik', 'Plus Jakarta Sans', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+    }
+    .wrap_404 {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .code_404 {
+      font-family: 'PP – Fragment', 'Playfair Display', Georgia, serif;
+      font-size: clamp(6rem, 4rem + 10vw, 14rem);
+      font-weight: 400;
+      color: #E60023;
+      margin: 0;
+      line-height: 0.9;
+    }
+    .title_404 {
+      font-family: 'PP – Fragment', 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.8rem, 1.2rem + 2vw, 3rem);
+      margin: 1.5rem 0 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .desc_404 {
+      font-size: 1.1rem;
+      color: rgba(251, 240, 218, 0.7);
+      max-width: 480px;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+    .btn_404 {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.9rem 2.2rem;
+      background: #E60023;
+      color: #ffffff;
+      border-radius: 100px;
+      font-family: 'Space Grotesk', monospace;
+      font-size: 0.82rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .btn_404:hover {
+      background: #ffffff;
+      color: #111111;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap_404">
+    <h1 class="code_404">404</h1>
+    <h2 class="title_404">Out of Rotation</h2>
+    <p class="desc_404">The page or item you are looking for has been moved, archived, or doesn't exist in our wardrobe catalog.</p>
+    <a href="/" class="btn_404">
+      <span>Return to Vesture</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </a>
+  </div>
+</body>
+</html>

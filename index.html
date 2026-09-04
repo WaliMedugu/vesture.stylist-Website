@@ -1,0 +1,447 @@
+<!DOCTYPE html><!-- Last Published: Mon May 05 2025 10:20:34 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="vesture.app" data-wf-page="66de2f1572bcf866302fd411" data-wf-site="vesture" lang="en"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>Vesture – Your Personal AI Stylist &amp; Digital Wardrobe</title><meta content="Vesture is your personal AI stylist. Organize your real closet, get tailored daily outfit recommendations for any occasion or weather, and look your best with zero effort." name="description"/><meta content="Vesture – Your Personal AI Stylist &amp; Digital Wardrobe" property="og:title"/><meta content="Your personal AI stylist in your pocket. Organize your real closet and discover the best daily outfit pairings tailored to your taste and schedule." property="og:description"/><meta content="assets/logo.png" property="og:image"/><meta content="Vesture – Your Personal AI Stylist &amp; Digital Wardrobe" name="twitter:title"/><meta content="Your personal AI stylist in your pocket. Organize your real closet and discover the best daily outfit pairings tailored to your taste and schedule." name="twitter:description"/><meta content="assets/logo.png" name="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="webflow.css" rel="stylesheet" type="text/css"/><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="assets/logo_monochrome.png" rel="shortcut icon" type="image/x-icon"/><link href="assets/logo_foreground.png" rel="apple-touch-icon"/><script type="module" src="bundle.js"></script>
+
+ 
+
+
+<style>
+::-webkit-scrollbar {
+	width: 0px !important;
+} 
+body::-webkit-scrollbar {
+	display: none !important;
+}
+</style><style>
+.loader{
+	display: flex;
+} 
+</style>
+<style>.w-webflow-badge { display: none !important; }</style>
+<style>
+  .hero_serif_txt, .nav_logo_svg text, .hero_svg_small text, .quotes_kanji_svg text {
+    font-family: 'PP – Fragment', 'Playfair Display', Georgia, serif !important;
+  }
+  .kanji_title, .kanji_title_small {
+    font-family: 'Aeonik', 'Plus Jakarta Sans', sans-serif !important;
+    letter-spacing: 0.15em !important;
+    text-transform: uppercase !important;
+  }
+  .home_project_title h3 {
+    font-family: 'Aeonik', 'Plus Jakarta Sans', sans-serif !important;
+    font-weight: 500 !important;
+    letter-spacing: -0.01em !important;
+  }
+</style>
+</head><body data-theme="dark" data-page="home"><div class="page_wrap"><div class="page_code_wrap"><div class="page_code_base w-embed"><style>
+/* variables */
+:root {
+	/* grid */
+	--column-count: 10;
+	--grid-main: repeat(var(--column-count), minmax(0, 1fr));
+	--grid-1: repeat(1, minmax(0, 1fr));
+	--grid-2: repeat(2, minmax(0, 1fr));
+	--grid-3: repeat(3, minmax(0, 1fr));
+	--grid-4: repeat(4, minmax(0, 1fr));
+	--grid-5: repeat(5, minmax(0, 1fr));
+	--grid-6: repeat(6, minmax(0, 1fr));
+	--grid-7: repeat(7, minmax(0, 1fr));
+	--grid-8: repeat(8, minmax(0, 1fr));
+	--grid-9: repeat(9, minmax(0, 1fr));
+	--grid-10: repeat(10, minmax(0, 1fr));
+	--grid-11: repeat(11, minmax(0, 1fr));
+	--grid-12: repeat(12, minmax(0, 1fr));
+	--grid-gap-total: calc(var(--grid-gap--main) * (var(--column-count) - 1));
+	--grid-width: calc(min(var(--max-width--main), 100vw) - (var(--padding-horizontal--main) * 2));
+	--column-width: calc((var(--grid-width) - var(--grid-gap-total)) / var(--column-count) + var(--grid-gap--main));
+	--column-width--1: calc(var(--column-width) * 1 - var(--grid-gap--main));
+	--column-width--2: calc(var(--column-width) * 2 - var(--grid-gap--main));
+	--column-width--3: calc(var(--column-width) * 3 - var(--grid-gap--main));
+	--column-width--4: calc(var(--column-width) * 4 - var(--grid-gap--main));
+	--column-width--5: calc(var(--column-width) * 5 - var(--grid-gap--main));
+	--column-width--6: calc(var(--column-width) * 6 - var(--grid-gap--main));
+	--column-width--7: calc(var(--column-width) * 7 - var(--grid-gap--main));
+	--column-width--8: calc(var(--column-width) * 8 - var(--grid-gap--main));
+	--column-width--9: calc(var(--column-width) * 9 - var(--grid-gap--main));
+	--column-width--10: calc(var(--column-width) * 10 - var(--grid-gap--main));
+	--column-width--11: calc(var(--column-width) * 11 - var(--grid-gap--main));
+	--column-width--12: calc(var(--column-width) * 12 - var(--grid-gap--main));
+	--breakout-gutter: minmax(calc(var(--padding-horizontal--main) - var(--grid-gap--main)), 1fr);
+	--breakout-remaining: calc(var(--max-width--main) - (var(--padding-horizontal--main) * 2));
+	--breakout-start: [full-start] var(--breakout-gutter) [content-start];
+	--breakout-end: [content-end] var(--breakout-gutter) [full-end];
+	--grid-breakout-single: var(--breakout-start) minmax(0, var(--breakout-remaining)) var(--breakout-end);
+	--grid-breakout: var(--breakout-start) repeat(var(--column-count), minmax(0, calc((var(--breakout-remaining) - var(--grid-gap-total)) / var(--column-count)))) var(--breakout-end);
+	/* others */
+	--font-weight--inherit: inherit;
+	--font-weight--100: 100;
+	--font-weight--200: 200;
+	--font-weight--300: 300;
+	--font-weight--400: 400;
+	--font-weight--500: 500;
+	--font-weight--600: 600;
+	--font-weight--700: 700;
+	--font-weight--800: 800;
+	--font-weight--900: 900;
+	--text-transform--none: none;
+	--text-transform--uppercase: uppercase;
+	--text-transform--capitalize: capitalize;
+	--text-transform--lowercase: lowercase;
+	--text-transform--inherit: inherit;
+	--max-width--none: none;
+}
+
+/* default styles */
+body {
+	font-weight: var(--text-main--font-weight);
+	text-transform: var(--text-main--text-transform);
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, p, label, blockquote, figure {
+	font-size: inherit;
+	line-height: inherit;
+	font-weight: inherit;
+  vertical-align: middle;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+button {
+	background-color: unset;
+	padding: unset;
+	text-align: inherit;
+	cursor: pointer;
+}
+img::selection {
+	background: transparent;
+}
+:is(h1, h2, h3, h4, h5, h6, p) a {
+	text-decoration: underline;
+}
+.u-rich-text > *:first-child,
+.u-rich-text .w-richtext > *:first-child {
+	margin-top: 0;
+}
+.u-rich-text > *:last-child,
+.u-rich-text .w-richtext > *:last-child {
+	margin-bottom: 0;
+}
+video {
+	width: 100%;
+	object-fit: cover;
+}
+video.wf-empty {
+	padding: 0;
+}
+svg {
+	display: block;
+}
+section, header, footer {
+	position: relative;
+}
+@media (prefers-color-scheme: light) {
+	option {
+		color: black;
+	}
+}
+.wf-design-mode .g_clickable_wrap {
+	z-index: -1;
+}
+
+/* line clamp */
+.u-line-clamp-1, .u-line-clamp-2, .u-line-clamp-3, .u-line-clamp-4 {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.u-line-clamp-2 { -webkit-line-clamp: 2; }
+.u-line-clamp-3 { -webkit-line-clamp: 3; }
+.u-line-clamp-4 { -webkit-line-clamp: 4; }
+
+/* focus states */
+[tabindex]:focus-visible,
+a:focus-visible,
+button:focus-visible,
+.w-checkbox-input--inputType-custom.w--redirected-focus,
+.w-form-formradioinput--inputType-custom.w--redirected-focus {
+	outline: 2px solid var(--theme--text);
+	outline-offset: 4px;
+}
+.w-checkbox-input--inputType-custom.w--redirected-focus,
+.w-form-formradioinput--inputType-custom.w--redirected-focus {
+	box-shadow: none;
+}
+
+/* section padding */
+[data-padding-top="none"] { padding-top: var(--padding-vertical--none); }
+[data-padding-bottom="none"] { padding-bottom: var(--padding-vertical--none); }
+
+[data-padding-top="small"] { padding-top: var(--padding-vertical--small); }
+[data-padding-bottom="small"] { padding-bottom: var(--padding-vertical--small); }
+
+[data-padding-top="main"] { padding-top: var(--padding-vertical--main); }
+[data-padding-bottom="main"] { padding-bottom: var(--padding-vertical--main); }
+
+[data-padding-top="large"] { padding-top: var(--padding-vertical--large); }
+[data-padding-bottom="large"] { padding-bottom: var(--padding-vertical--large); }
+
+[data-padding-top="xlarge"] { padding-top: var(--padding-vertical--xlarge); }
+[data-padding-bottom="xlarge"] { padding-bottom: var(--padding-vertical--xlarge); }
+
+.u-hide-rich-text-media > *:not(h1,h2,h3,h4,h5,h6,p,blockquote),
+.u-hide-if-empty-cms:not(:has(.w-dyn-item)),
+.u-embed-js,
+.u-embed-css {
+	display: none !important;
+}
+
+.g_clickable_wrap a[href="#"] {
+	display: none;
+}
+.g_clickable_wrap a[href="#"] ~ button {
+	display: block;
+}
+</style></div><div class="page_code_color w-embed"><style>
+/* theme light */
+:root,
+[data-theme="light"],
+[data-theme="dark"] [data-theme="invert"] {
+	--theme--background: var(--swatch--light);
+	--theme--text: var(--swatch--dark);
+	--theme--border: var(--swatch--dark-secondary);
+	/* button primary */
+	--button--background: var(--swatch--brand);
+	--button--text: var(--swatch--light);
+	--button--border: var(--swatch--brand);
+	--button--background-hover: var(--swatch--dark);
+	--button--text-hover: var(--swatch--light);
+	--button--border-hover: var(--swatch--dark);
+	/* button secondary */
+	--button-secondary--background: var(--swatch--transparent);
+	--button-secondary--text: var(--swatch--light);
+	--button-secondary--border: var(--swatch--light);
+	--button-secondary--background-hover: var(--swatch--dark); 
+}
+/* theme dark */
+[data-theme="dark"],
+[data-theme="invert"],
+[data-theme="light"] [data-theme="invert"] {
+	--theme--background: var(--swatch--dark);
+	--theme--text: var(--swatch--light);
+	--theme--border: var(--swatch--light);
+	/* button primary */
+	--button--background: var(--swatch--brand);
+	--button--text: var(--swatch--light);
+	--button--border: var(--swatch--dark);
+	--button--background-hover: var(--swatch--dark);
+	--button--text-hover: var(--swatch--light);
+	--button--border-hover: var(--swatch--light);
+	/* button secondary */
+	--button-secondary--background: var(--swatch--transparent);
+	--button-secondary--text: var(--swatch--light);
+	--button-secondary--border: var(--swatch--light);
+	--button-secondary--background-hover: var(--swatch--light);
+	--button-secondary--text-hover: var(--swatch--brand-dark); 
+}
+/* button secondary */
+[data-button-style="secondary"] {
+	--button--background: var(--button-secondary--background);
+	--button--text: var(--button-secondary--text);
+	--button--border: var(--button-secondary--border);
+	--button--background-hover: var(--button-secondary--background-hover);
+	--button--text-hover: var(--button-secondary--text-hover);
+	--button--border-hover: var(--button-secondary--border-hover);
+}
+/* apply colors */
+:is(c, :where([data-theme]:not([data-theme="inherit"]))) {
+	background-color: var(--theme--background);
+	color: var(--theme--text);
+}
+</style></div><div class="page_code_responsive w-embed"><style>
+/* https://fluidbuilder.webflow.io/?design=120&max=120&min=20&g=--padding-horizontal--main,3,1_--size--2rem,2,1.75_--size--2-5rem,2.5,2_--size--3rem,3,2.25_--size--3-5rem,3.5,2.375_--size--4rem,4,2.5_--size--4-5rem,4.5,2.75_--size--5rem,5,3_--size--5-5rem,5.5,3.25_--size--6rem,6,3.5_--size--6-5rem,6.5,3.75_--size--7rem,7,4_--size--7-5rem,7.5,4.25_--size--8rem,8,4.5_--size--8-5rem,8.5,4.75_--size--9rem,9,5_--size--9-5rem,9.5,5.25_--size--10rem,10,5.5_--size--11rem,11,5.75_--size--12rem,12,6_--size--13rem,13,6.5_--size--14rem,14,7_--size--15rem,15,7.5_--size--16rem,16,8_--size--20rem,20,10_--size--24rem,24,12_--size--28rem,28,14_--size--32rem,32,16,t&g=:1.46,1.24:--display--font-size,16,4,t_--h1--font-size,10.96,3.23_,7.51,2.6_--h2--font-size,5.14,2.1_--h3--font-size,3.52,1.69_--h4--font-size,2.41,1.36_--h5--font-size,1.65,1.1_--h6--font-size,1.13,0.89&g=:1.32,1.18:--text-xlarge--font-size,4,2,t_,3.03,1.69_--variable-name,2.3,1.44_--text-large--font-size,1.74,1.22_--text-main--font-size,1.32,1.03_--text-small--font-size,1,0.87_--text-xsmall--font-size,0.76,0.74 */
+
+/* fallback for older browsers */
+:root {
+	--padding-horizontal--main: 3rem;
+	--size--2rem: 2rem;
+	--size--2-5rem: 2.5rem;
+	--size--3rem: 3rem;
+	--size--3-5rem: 3.5rem;
+	--size--4rem: 4rem;
+	--size--4-5rem: 4.5rem;
+	--size--5rem: 5rem;
+	--size--5-5rem: 5.5rem;
+	--size--6rem: 6rem;
+	--size--6-5rem: 6.5rem;
+	--size--7rem: 7rem;
+	--size--7-5rem: 7.5rem;
+	--size--8rem: 8rem;
+	--size--8-5rem: 8.5rem;
+	--size--9rem: 9rem;
+	--size--9-5rem: 9.5rem;
+	--size--10rem: 10rem;
+	--size--11rem: 11rem;
+	--size--12rem: 12rem;
+	--size--13rem: 13rem;
+	--size--14rem: 14rem;
+	--size--15rem: 15rem;
+	--size--16rem: 16rem;
+	--size--20rem: 20rem;
+	--size--24rem: 24rem;
+	--size--28rem: 28rem;
+	--size--32rem: 32rem;
+	--display--font-size: 16rem;
+	--h1--font-size: 10.96rem;
+	--h2--font-size: 5.14rem;
+	--h3--font-size: 3.52rem;
+	--h4--font-size: 2.41rem;
+	--h5--font-size: 1.65rem;
+	--h6--font-size: 1.13rem;
+	--text-xlarge--font-size: 4rem;
+	--variable-name: 2.3rem;
+	--text-large--font-size: 1.74rem;
+	--text-main--font-size: 1.32rem;
+	--text-small--font-size: 1rem;
+	--text-xsmall--font-size: 0.76rem;
+}
+@media screen and (max-width: 767px) {
+	:root {
+		--padding-horizontal--main: 1rem;
+		--size--2rem: 1.75rem;
+		--size--2-5rem: 2rem;
+		--size--3rem: 2.25rem;
+		--size--3-5rem: 2.375rem;
+		--size--4rem: 2.5rem;
+		--size--4-5rem: 2.75rem;
+		--size--5rem: 3rem;
+		--size--5-5rem: 3.25rem;
+		--size--6rem: 3.5rem;
+		--size--6-5rem: 3.75rem;
+		--size--7rem: 4rem;
+		--size--7-5rem: 4.25rem;
+		--size--8rem: 4.5rem;
+		--size--8-5rem: 4.75rem;
+		--size--9rem: 5rem;
+		--size--9-5rem: 5.25rem;
+		--size--10rem: 5.5rem;
+		--size--11rem: 5.75rem;
+		--size--12rem: 6rem;
+		--size--13rem: 6.5rem;
+		--size--14rem: 7rem;
+		--size--15rem: 7.5rem;
+		--size--16rem: 8rem;
+		--size--20rem: 10rem;
+		--size--24rem: 12rem;
+		--size--28rem: 14rem;
+		--size--32rem: 16rem;
+		--display--font-size: 4rem;
+		--h1--font-size: 3.23rem;
+		--h2--font-size: 2.1rem;
+		--h3--font-size: 1.69rem;
+		--h4--font-size: 1.36rem;
+		--h5--font-size: 1.1rem;
+		--h6--font-size: 0.89rem;
+		--text-xlarge--font-size: 2rem;
+		--variable-name: 1.44rem;
+		--text-large--font-size: 1.22rem;
+		--text-main--font-size: 1.03rem;
+		--text-small--font-size: 0.87rem;
+		--text-xsmall--font-size: 0.74rem;
+	}
+}
+
+/* fluid sizes */
+@supports (font-size: clamp(1rem, 0.5rem + 3vw, 3rem)) {
+	:root {
+		--padding-horizontal--main: clamp(1rem, 0.6rem + 2vw, 3rem);
+		--size--2rem: clamp(1.75rem, 1.7rem + 0.25vw, 2rem);
+		--size--2-5rem: clamp(2rem, 1.9rem + 0.5vw, 2.5rem);
+		--size--3rem: clamp(2.25rem, 2.1rem + 0.75vw, 3rem);
+		--size--3-5rem: clamp(2.375rem, 2.151rem + 1.12vw, 3.5rem);
+		--size--4rem: clamp(2.5rem, 2.2rem + 1.5vw, 4rem);
+		--size--4-5rem: clamp(2.75rem, 2.4rem + 1.75vw, 4.5rem);
+		--size--5rem: clamp(3rem, 2.6rem + 2vw, 5rem);
+		--size--5-5rem: clamp(3.25rem, 2.8rem + 2.25vw, 5.5rem);
+		--size--6rem: clamp(3.5rem, 3rem + 2.5vw, 6rem);
+		--size--6-5rem: clamp(3.75rem, 3.2rem + 2.75vw, 6.5rem);
+		--size--7rem: clamp(4rem, 3.4rem + 3vw, 7rem);
+		--size--7-5rem: clamp(4.25rem, 3.6rem + 3.25vw, 7.5rem);
+		--size--8rem: clamp(4.5rem, 3.8rem + 3.5vw, 8rem);
+		--size--8-5rem: clamp(4.75rem, 4rem + 3.75vw, 8.5rem);
+		--size--9rem: clamp(5rem, 4.2rem + 4vw, 9rem);
+		--size--9-5rem: clamp(5.25rem, 4.4rem + 4.25vw, 9.5rem);
+		--size--10rem: clamp(5.5rem, 4.6rem + 4.5vw, 10rem);
+		--size--11rem: clamp(5.75rem, 4.7rem + 5.25vw, 11rem);
+		--size--12rem: clamp(6rem, 4.8rem + 6vw, 12rem);
+		--size--13rem: clamp(6.5rem, 5.2rem + 6.5vw, 13rem);
+		--size--14rem: clamp(7rem, 5.6rem + 7vw, 14rem);
+		--size--15rem: clamp(7.5rem, 6rem + 7.5vw, 15rem);
+		--size--16rem: clamp(8rem, 6.4rem + 8vw, 16rem);
+		--size--20rem: clamp(10rem, 8rem + 10vw, 20rem);
+		--size--24rem: clamp(12rem, 9.6rem + 12vw, 24rem);
+		--size--28rem: clamp(14rem, 11.2rem + 14vw, 28rem);
+		--size--32rem: clamp(16rem, 12.8rem + 16vw, 32rem);
+		--display--font-size: clamp(4rem, 1.6rem + 12vw, 16rem);
+		--h1--font-size: clamp(3.23rem, 1.684rem + 7.73vw, 10.96rem);
+		--h2--font-size: clamp(2.1rem, 1.492rem + 3.04vw, 5.14rem);
+		--h3--font-size: clamp(1.69rem, 1.324rem + 1.83vw, 3.52rem);
+		--h4--font-size: clamp(1.36rem, 1.15rem + 1.05vw, 2.41rem);
+		--h5--font-size: clamp(1.1rem, 0.99rem + 0.55vw, 1.65rem);
+		--h6--font-size: clamp(0.89rem, 0.842rem + 0.24vw, 1.13rem);
+		--text-xlarge--font-size: clamp(2rem, 1.6rem + 2vw, 4rem);
+		--variable-name: clamp(1.44rem, 1.268rem + 0.86vw, 2.3rem);
+		--text-large--font-size: clamp(1.22rem, 1.116rem + 0.52vw, 1.74rem);
+		--text-main--font-size: clamp(1.03rem, 0.972rem + 0.29vw, 1rem);
+		--text-small--font-size: clamp(0.87rem, 0.844rem + 0.13vw, 1rem);
+		--text-xsmall--font-size: clamp(0.74rem, 0.736rem + 0.02vw, 0.76rem);
+	}
+}
+</style></div><div class="page_code_custom w-embed"></div></div><div data-loader="wrap" class="loader"><div class="loader_panel u-hflex-left-stretch"><div class="panel_inner"><div data-loader="panel-line" class="line is-panel-inner-l"></div></div><div data-loader="line-mid" class="line is-panel-l"></div></div><div class="loader_panel u-hflex-right-stretch"><div class="panel_inner"><div data-loader="panel-line" class="line is-pannel-inner-r"></div></div><div data-loader="line-mid" class="line is-panel-r"></div></div><div class="loader_logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" class="loader_svg">
+  <g transform="matrix(3.0810909271240234, 0, 0, 3.0810909271240234, -520.272705078125, -520.272705078125)">
+    <circle cx="250" cy="250" r="75" stroke="currentColor" STYLE="stroke-dasharray: 470.48;" fill="#FBF0DA" class="loader_circle"></circle>
+    <path d="M 250 250 Z" fill="currentColor" data-loader="logo" class="loader_kanji"></path>
+    <image href="assets/logo_monochrome.png" x="195" y="195" width="110" height="110" preserveAspectRatio="xMidYMid meet"></image>
+  </g>
+</svg></div></div><div class="menu"><div class="menu_container"><div class="menu_panel_wrap u-hflex-center-center"><nav data-menu="panel-left" class="menu_panel_left"><ul class="menu_nav_link_wrap u-vflex-left-stretch"><a href="#hero" class="menu_nav_link u-hflex-between-center w-inline-block w--current"><div class="menu_nav_flex u-hflex-left-top u-gap-small"><div class="menu_nav_num"><div data-menu="num">(1)</div></div><div class="menu_nav_item"><div data-menu="nav-link">Home</div></div></div><div class="line_wrapper is-menu"><div data-menu="line-small" class="line is-menu"></div></div><div class="line_wrapper is-menu-thick"><div class="line is-menu-thick"></div></div><div class="menu_link_whipe"></div></a>
+<a href="#about" class="menu_nav_link u-hflex-between-center w-inline-block"><div class="menu_nav_flex u-hflex-left-top u-gap-small"><div class="menu_nav_num"><div data-menu="num">(2)</div></div><div class="menu_nav_item"><div data-menu="nav-link">About</div></div></div><div class="line_wrapper is-menu"><div data-menu="line-small" class="line is-menu"></div></div><div class="line_wrapper is-menu-thick"><div class="line is-menu-thick"></div></div><div class="menu_link_whipe"></div></a>
+<a href="#outfits" class="menu_nav_link u-hflex-between-center w-inline-block"><div class="menu_nav_flex u-hflex-left-top u-gap-small"><div class="menu_nav_num"><div data-menu="num">(3)</div></div><div class="menu_nav_item"><div data-menu="nav-link">Daily Fits</div></div></div><div class="line_wrapper is-menu"><div data-menu="line-small" class="line is-menu"></div></div><div class="line_wrapper is-menu-thick"><div class="line is-menu-thick"></div></div><div class="menu_link_whipe"></div></a>
+<a href="#system" class="menu_nav_link u-hflex-between-center w-inline-block"><div class="menu_nav_flex u-hflex-left-top u-gap-small"><div class="menu_nav_num"><div data-menu="num">(4)</div></div><div class="menu_nav_item"><div data-menu="nav-link">Wardrobe System</div></div></div><div class="line_wrapper is-menu"><div data-menu="line-small" class="line is-menu"></div></div><div class="line_wrapper is-menu-thick"><div class="line is-menu-thick"></div></div><div class="menu_link_whipe"></div></a>
+<a href="#stylist" class="menu_nav_link u-hflex-between-center w-inline-block"><div class="menu_nav_flex u-hflex-left-top u-gap-small"><div class="menu_nav_num"><div data-menu="num">(5)</div></div><div class="menu_nav_item"><div data-menu="nav-link">AI Stylist</div></div></div><div class="line_wrapper is-menu"><div data-menu="line-small" class="line is-menu"></div></div><div class="line_wrapper is-menu-thick"><div class="line is-menu-thick"></div></div><div class="menu_link_whipe"></div></a>
+<a href="#manifesto" class="menu_nav_link u-hflex-between-center w-inline-block"><div class="menu_nav_flex u-hflex-left-top u-gap-small"><div class="menu_nav_num"><div data-menu="num">(6)</div></div><div class="menu_nav_item"><div data-menu="nav-link">Manifesto</div></div></div><div class="line_wrapper is-menu"><div data-menu="line-small" class="line is-menu"></div></div><div class="line_wrapper is-menu-thick"><div class="line is-menu-thick"></div></div><div class="menu_link_whipe"></div></a>
+<a href="#download" class="menu_nav_link u-hflex-between-center w-inline-block"><div class="menu_nav_flex u-hflex-left-top u-gap-small"><div class="menu_nav_num"><div data-menu="num">(7)</div></div><div class="menu_nav_item"><div data-menu="nav-link">Download</div></div></div><div class="line_wrapper is-menu"><div data-menu="line-small" class="line is-menu"></div></div><div class="line_wrapper is-menu-thick"><div class="line is-menu-thick"></div></div><div class="menu_link_whipe"></div></a></ul></nav><div data-menu="panel-right" class="menu_panel_right"><div class="m_panel_right_top u-vflex-center-between u-gap-medium"><div data-menu="nav-svg" class="m_panel_svg_wrap"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 204 201" fill="none" class="m_panel_svg_icon"><path d="M204 154.21C190.4 154.869 186.013 159.702 179.652 166.731C162.323 154.43 148.065 142.787 132.052 120.161C119.329 102.587 109.019 83.2557 103.316 62.3869H101.561C101.561 96.4361 102 130.266 103.097 164.315C103.316 168.489 104.413 187.161 104.413 190.456C104.413 198.144 96.7355 201 93.8839 201C87.7419 201 87.7419 197.046 87.7419 195.508C87.7419 192.433 89.2774 178.813 89.2774 176.177C90.1548 156.846 89.9355 148.718 90.5935 75.1279C83.5742 88.7475 72.3871 110.934 45.8452 137.295C28.2968 154.869 11.4065 164.974 0.877419 171.125L0 169.367C36.8516 137.734 67.7806 98.4131 83.3548 62.3869H35.5355C27.8581 62.3869 15.5742 63.2656 7.23871 64.8033L2.19355 55.3574C18.6452 56.6754 34.4387 57.1148 38.6065 57.1148H90.5935C90.5935 33.6098 88.4 16.2557 87.9613 12.9606C87.5226 9.66557 86.8645 7.68852 84.2323 0L107.265 5.71147C109.239 6.15082 109.677 7.24918 109.677 8.34754C109.677 11.2033 108.581 11.8623 102 15.8164C101.561 22.4066 101.781 51.1836 101.561 57.1148H163.858L172.632 46.5705C173.29 45.6918 175.045 43.9344 176.142 43.9344C177.458 43.9344 178.994 45.4721 180.31 46.5705L191.277 56.6754C192.594 57.7738 193.471 58.8721 193.471 59.9705C193.471 61.9475 191.497 62.3869 190.181 62.3869H105.948C110.774 73.5902 129.639 110.275 161.884 132.243C164.297 134 186.89 149.377 204 152.452V154.21Z" fill="currentColor"></path></svg></div><div class="m_panel_info u-grid-column-2"><div id="w-node-_5f03a1ba-8875-9f30-6154-9db07d7cffef-7d7cff4f" class="m_panel_info_wrap u-vflex-left-top u-gap-medium"><div class="m_panel_info_item u-vflex-left-top"><div class="m_panel_info_title"><div data-menu="c-item">Email</div></div><div class="m_panel_info_link u-color-faded"><a data-hover="link" data-menu="c-item" href="#" class="menu_c_link">vesture.stylist@gmail.com</a></div></div><div class="m_panel_info_item u-vflex-left-top"><div class="m_panel_info_title"><div data-menu="c-item">Phone</div></div><div class="m_panel_info_link u-color-faded"><a data-hover="link" data-menu="c-item" href="#" class="menu_c_link">+1 (800) 582-8873</a></div></div><div class="m_panel_info_item u-vflex-left-top"><div class="m_panel_info_title"><div data-menu="c-item">Social</div></div><ul class="m_panel_info_social u-vflex-left-top"><li class="m_panel_info_social-item u-color-faded"><a data-hover="link" data-menu="c-item" href="#" class="menu_c_link">instagram</a></li><li class="m_panel_info_social-item u-color-faded"><a data-hover="link" data-menu="c-item" href="#" class="menu_c_link">facebook</a></li><li class="m_panel_info_social-item u-color-faded"><a data-hover="link" data-menu="c-item" href="#" class="menu_c_link">Twitter (x)</a></li></ul></div></div><div id="w-node-_5f03a1ba-8875-9f30-6154-9db07d7d000c-7d7cff4f" class="m_panel_info_wrap u-vflex-left-top u-gap-medium"><div class="m_panel_info_item u-vflex-left-top"><div class="m_panel_info_title"><div data-menu="c-item">OFFICE</div></div><div class="m_panel_info_link u-color-faded"><a data-hover="link" data-menu="c-item" href="#" class="menu_c_link">Tokyo · London · New York</a></div></div><div class="m_panel_info_item u-vflex-left-top"><div class="m_panel_info_link u-color-faded"><a data-menu="c-item" href="#" class="menu_c_link">Monday to Friday: <br/>9:00 AM - 6:00 PM</a></div></div><div class="m_panel_info_item u-vflex-left-top"><div class="m_panel_info_title"><div data-menu="c-item">Legal</div></div><ul class="m_panel_info_social u-vflex-left-top"><li class="m_panel_info_social-item u-color-faded"><a data-hover="link" data-menu="c-item" href="/privacy" class="menu_c_link">Privacy Policy</a></li><li class="m_panel_info_social-item u-color-faded"><a data-hover="link" data-menu="c-item" href="/terms" class="menu_c_link">Terms of service</a><link rel="prefetch" href="/terms"/></li></ul></div></div></div></div><div class="m_panel_right_btm u-hflex-center-center"><div class="line_wrapper is-menu-btm"><div data-menu="line-small" class="line"></div></div><div class="m_panel_info u-grid-column-2"><div id="w-node-_5f03a1ba-8875-9f30-6154-9db07d7d002b-7d7cff4f" class="m_panel_info_wrap u-vflex-left-top u-gap-medium"><div class="m_panel_info_item u-hflex-left-top"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 7 7" fill="none" class="info_link_asterix"><path d="M2.604 6.23L2.968 3.36L1.218 5.656L0.56 5.012L2.842 3.22L0 3.584V2.674L2.842 3.01L0.56 1.232L1.218 0.574L2.968 2.884L2.604 0H3.514L3.15 2.884L4.914 0.574L5.558 1.232L3.276 3.01L6.132 2.674V3.584L3.276 3.22L5.558 5.012L4.914 5.656L3.15 3.36L3.514 6.23H2.604Z" fill="currentColor" data-menu="c-item" class="menu_ast_path"></path></svg><div class="m_panel_info_link"><a data-hover="link" data-menu="c-item" data-credit="c-open" href="#" class="menu_c_link">disclaimer</a></div></div></div><div id="w-node-_5f03a1ba-8875-9f30-6154-9db07d7d0032-7d7cff4f" class="m_panel_info_wrap u-vflex-left-top u-gap-medium"><div class="m_panel_info_item u-vflex-left-top"><div class="m_panel_info_link"><div data-menu="c-item" class="menu_c_link">©2025 – VESTURE</div></div></div></div></div></div><div class="menu_close u-vflex-center-center"><button data-button-style="primary" data-menu="closebtn" class="close_btn u-button-style u-radius-round u-position-relative u-display-inline-block"><div aria-hidden="true" class="close_btn_layout u-gap-xsmall u-hflex-center-center is_small"><div class="btn_main_text u-text-transform-uppercase">Close</div></div></button></div></div></div><div class="menu_credit_wrap"><div class="menu_credit_content u-vflex-center-bottom"><div data-menu="credit-wrapper" class="menu_credit_inner u-hflex-center-top"><div class="menu_credit_flex u-gap-large"><div class="menu_credit_top u-vflex-center-center u-gap-main"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 349 88" fill="none" data-menu="credit_kanji" class="menu_credit_svg"><path d="M85.4093 79.0195C85.4093 84.1735 73.6287 84.2656 63.7809 84.2656C49.5153 84.2656 46.202 83.8974 46.202 77.0868C46.202 73.0372 46.294 54.7221 46.294 51.0406H33.5931L36.7223 52.9734C38.2869 53.8937 38.471 54.3539 38.471 54.8141C38.471 55.3663 38.1028 55.6424 37.7347 55.9185C37.4586 56.1026 35.894 56.7468 35.6179 56.9309C32.0285 66.7788 24.0214 84.5417 0.460179 86.0143L0.552215 85.5541C19.7877 81.0443 30.2798 62.0849 30.4639 51.0406H18.5912C18.5912 53.2495 18.5912 55.2743 14.8178 55.2743C13.1611 55.2743 12.9771 53.8937 12.9771 53.1574C12.9771 53.0654 12.9771 52.4212 13.0691 51.4088C13.5293 40.8246 13.6213 37.8795 13.6213 33.4618C13.6213 30.9768 13.5293 29.5042 13.4372 27.1113C7.1788 31.529 2.85311 33.2777 0.276107 34.2901L0 33.9219C8.00712 29.044 20.0638 17.9997 27.4267 6.03508C28.8072 3.82623 28.8993 2.44569 28.9913 1.06515L36.2621 4.83862C36.9064 5.20676 37.5506 5.57491 37.5506 6.40323C37.5506 7.23155 36.8143 7.69173 36.2621 7.78377C34.1453 8.24394 33.9612 8.24394 33.0409 8.61209C31.9364 9.99263 31.6603 10.2687 30.924 11.1891H53.5649L56.6021 8.70412C57.6144 7.8758 57.7985 7.69173 58.3507 7.69173C58.995 7.69173 59.7313 8.33598 59.9153 8.52005L63.5968 11.9254C63.8729 12.2935 64.057 12.7537 64.057 13.2139C64.057 14.3183 63.0446 14.6865 62.4924 14.7785C59.3631 15.0546 58.0746 15.2387 55.8658 16.9874C51.6321 20.4847 47.3064 23.9821 43.0728 27.3874H66.2658L68.0145 24.9945C68.5667 24.2582 68.9349 23.798 69.5791 23.798C70.0393 23.798 70.4995 24.0741 70.8676 24.3502L74.0889 27.1113C74.8252 27.7555 75.1933 28.1237 75.1933 28.7679C75.1933 29.4122 74.7331 29.8724 74.1809 30.1485C72.8924 30.8848 72.8924 30.8848 71.972 31.6211C72.2482 34.8423 72.9844 50.0282 72.9844 50.3043C72.9844 52.6052 71.3278 54.0778 69.4871 54.0778C67.3702 54.0778 67.3702 52.053 67.3702 51.0406H51.5401C51.356 57.207 51.356 76.7186 51.5401 77.1788C51.7242 77.9151 52.1843 78.2832 52.9206 78.4673C53.5649 78.7434 65.2534 79.0195 67.0021 79.0195C74.7331 79.0195 75.7455 78.1912 76.7579 75.6142C78.1385 72.1168 79.0588 68.4354 80.4393 62.361H81.2677C81.4517 64.4779 82.4641 75.5222 82.8323 76.4425C83.1084 76.9947 83.2004 77.0868 84.673 77.639C85.1332 77.9151 85.4093 78.4673 85.4093 79.0195ZM40.2197 48.8318V29.5963H18.4992V48.8318H40.2197ZM67.3702 48.8318V29.5963H45.2816V48.8318H67.3702ZM52.0003 13.398H28.9913C25.0338 17.6316 20.8001 21.6812 16.1063 25.0865L19.0514 27.3874H41.7843C47.2144 20.2086 48.9631 17.8157 52.0003 13.398Z" fill="currentColor"></path><path d="M157.105 39.7202C157.105 40.4565 156.553 41.0087 156.277 41.2848C155.909 41.5609 154.344 42.7574 153.976 42.9415C153.976 48.6477 154.068 54.3539 154.344 60.0601C154.344 61.0725 154.712 65.4902 154.712 66.4106C154.712 69.7239 151.215 69.908 150.755 69.908C149.374 69.908 149.374 69.1717 149.374 68.5274V67.8832H113.296C113.296 68.7115 113.204 71.3805 109.431 71.3805C107.866 71.3805 107.774 70.6443 107.774 69.908C107.774 69.5398 107.866 67.8832 107.958 67.6071C108.05 65.1221 108.418 56.6548 108.418 46.0707C108.418 41.5609 108.142 39.26 107.498 34.8423L114.216 38.2476H147.718L149.742 36.3149C150.387 35.7627 150.847 35.3025 151.123 35.3025C151.307 35.3025 152.411 36.0388 152.688 36.1308L156.185 38.2476C156.829 38.6158 157.105 39.076 157.105 39.7202ZM149.374 56.1026V48.9238H113.296V56.1026H149.374ZM149.374 65.6743V58.3115H113.296V65.6743H149.374ZM149.374 46.7149V40.4565H113.296V46.7149H149.374ZM126.089 76.2584C126.089 77.4549 124.709 77.4549 124.248 77.4549C123.512 77.4549 122.132 77.3629 120.751 77.1788C116.425 79.4797 110.903 82.4249 90.3792 86.5665L90.1951 85.8302C93.3244 84.8178 102.896 80.9523 112.836 75.154C117.07 72.669 118.082 71.2885 119.278 69.2637L125.353 74.9699C125.905 75.5222 126.089 75.7983 126.089 76.2584ZM173.672 30.1485C173.672 30.9768 172.935 31.1609 172.291 31.1609H103.816C100.595 31.1609 95.5332 31.529 92.0359 32.1733L89.827 28.2157C96.7297 28.7679 103.448 28.952 105.105 28.952H128.942V22.6015H117.162C113.848 22.6015 108.786 22.9697 105.289 23.706L103.08 19.7484C109.983 20.3006 116.701 20.3927 118.45 20.3927H128.942C128.942 16.2511 128.942 15.7909 128.85 13.2139H108.786C105.565 13.2139 100.503 13.582 97.0058 14.2263L94.7969 10.2687C101.7 10.8209 108.418 11.005 110.075 11.005H128.758C128.574 7.23155 128.114 5.20676 127.009 1.52533L135.753 3.73419C136.397 3.91826 137.318 4.10233 137.318 4.93065C137.318 5.85102 136.673 6.21915 134.188 7.69173C134.188 8.05988 134.188 10.4528 134.096 11.005H157.565L159.774 7.8758C159.958 7.5997 160.603 6.77137 161.155 6.77137C161.615 6.77137 162.351 7.32359 162.903 7.69173L167.045 10.8209C167.413 11.1891 167.965 11.5572 167.965 12.2015C167.965 13.0298 167.229 13.2139 166.585 13.2139H134.096C133.912 19.0121 133.912 19.2882 133.912 20.3927H149.926L152.043 17.3555C152.319 16.8953 152.78 16.159 153.424 16.159C153.884 16.159 154.712 16.8953 155.08 17.1714L158.946 20.2086C159.406 20.5767 159.866 21.0369 159.866 21.6812C159.866 22.5095 159.038 22.6015 158.486 22.6015H134.004V28.952H163.088L165.665 25.8228C166.401 24.9945 166.493 24.6263 166.953 24.6263C167.505 24.6263 168.61 25.5467 168.702 25.6387L172.751 28.7679C173.211 29.2281 173.672 29.5042 173.672 30.1485ZM164.744 83.9895C164.744 85.7381 163.18 86.8426 161.523 86.8426C159.682 86.8426 158.21 85.37 155.817 82.793C151.123 77.8231 146.153 74.5098 141.275 72.3929L141.643 71.6567C151.951 74.3257 164.744 77.8231 164.744 83.9895Z" fill="currentColor"></path><path d="M263.499 54.0778C263.499 54.9061 262.762 55.0902 262.118 55.0902H247.853C247.853 57.115 248.313 66.1345 248.313 67.9752C248.313 71.1965 244.999 71.6567 244.355 71.6567C242.699 71.6567 242.514 70.1841 242.514 69.5398C242.514 69.1717 242.699 66.8708 242.699 66.3186H222.267C222.267 76.7186 222.267 77.9151 222.083 79.4797C221.714 82.793 218.861 85.37 213.063 87.5789C211.682 83.8974 209.382 81.5965 201.466 78.8354V78.0071C208.185 78.6514 211.314 78.8354 212.511 78.8354C215.364 78.8354 216.376 78.4673 216.744 76.9947C217.113 75.7062 217.205 68.3434 217.297 66.3186H200.454C197.233 66.3186 192.079 66.7788 188.674 67.423L186.465 63.4655C193.367 64.0177 200.086 64.1097 201.743 64.1097H217.297C217.389 61.5327 217.389 58.1274 217.389 55.0902H190.698C187.477 55.0902 182.415 55.4583 178.918 56.1026L176.709 52.1451C183.612 52.6973 190.33 52.8813 191.987 52.8813H217.389V43.7698H199.626C196.405 43.7698 191.343 44.23 187.845 44.8742L185.636 40.9167C192.539 41.4689 199.258 41.5609 200.914 41.5609H217.389V33.0016H198.061C197.969 34.2901 197.877 34.6582 197.693 35.0264C197.049 36.1308 195.576 36.9591 194.38 36.9591C193.275 36.9591 192.631 36.499 192.631 35.3025C192.631 34.7503 192.907 32.2653 192.907 31.7131C192.999 30.2405 193.183 28.0317 193.183 24.9024C193.183 20.1166 192.907 19.0121 192.539 17.2635L198.245 19.9325H217.481C217.481 18.8281 217.573 13.9502 217.573 12.9378H194.104C190.882 12.9378 185.728 13.3059 182.231 13.9502L180.114 9.99263C187.017 10.5448 193.643 10.7289 195.392 10.7289H217.481C217.481 8.42802 217.113 5.20676 216.008 0.420898L224.291 2.90587C224.66 2.9979 225.488 3.27401 225.488 4.2864C225.488 5.48287 224.567 5.85102 222.543 6.67934C222.451 8.61209 222.451 8.8882 222.451 10.7289H246.196L249.693 6.86341C250.614 5.85102 250.706 5.75898 251.074 5.75898C251.442 5.75898 251.81 5.94305 252.823 6.67934L257.977 10.5448C258.345 10.7289 258.897 11.2811 258.897 11.9254C258.897 12.7537 258.161 12.9378 257.516 12.9378H222.451C222.451 14.0422 222.359 19.0121 222.359 19.9325H241.41L243.067 18.3679C243.527 17.9077 243.895 17.6316 244.355 17.6316C244.631 17.6316 245.092 17.8157 245.46 18.0918L248.773 20.9449C249.601 21.6812 249.601 22.0493 249.601 22.2334C249.601 23.0617 248.773 23.5219 246.84 24.2582C246.748 25.3626 246.748 25.5467 246.84 27.7555C246.84 28.5839 247.208 32.7255 247.208 32.9096C247.208 35.2105 244.907 36.1308 243.619 36.1308C241.87 36.1308 241.962 34.9343 241.962 33.0016H222.359V41.5609H241.594L243.803 39.3521C244.723 38.4317 244.815 38.2476 245.184 38.2476C245.828 38.2476 246.564 38.9839 246.748 39.26L249.601 42.0211C250.153 42.5733 250.522 43.0335 250.522 43.4016C250.522 43.9539 250.153 44.414 247.761 45.9786C247.761 47.0831 247.761 51.8689 247.853 52.8813H252.915L256.044 48.8318C256.78 47.9114 256.964 47.7273 257.424 47.7273C258.069 47.7273 258.437 48.0955 258.989 48.6477L262.67 52.6973C263.499 53.5256 263.499 53.8017 263.499 54.0778ZM242.054 30.7927V22.1414H222.359V30.7927H242.054ZM217.481 30.7927V22.1414H198.061V30.7927H217.481ZM242.791 52.8813V43.7698H222.359V52.8813H242.791ZM242.791 64.1097V55.0902H222.267V64.1097H242.791Z" fill="currentColor"></path><path d="M348.54 9.80856C348.54 10.8209 347.527 10.8209 347.067 10.8209H323.782C322.218 14.5024 319.825 18.9201 317.432 22.5095H334.366L336.667 19.9325C337.127 19.4723 337.496 18.9201 338.048 18.9201C338.6 18.9201 339.244 19.2882 339.704 19.6564L343.018 22.0493C343.57 22.5095 344.122 22.6936 344.122 23.1538C344.122 24.1662 341.545 25.4547 340.625 26.0989C340.441 28.7679 340.901 49.384 340.993 53.3415C340.993 54.63 341.545 64.2938 341.545 64.5699C341.545 68.4354 338.876 69.0797 337.588 69.0797C336.115 69.0797 335.287 68.1593 335.379 66.1345H308.964C308.964 68.4354 306.663 69.5398 305.467 69.5398C303.442 69.5398 303.442 68.1593 303.442 67.6071C303.442 65.3062 303.718 61.6247 303.718 59.3238C303.902 52.053 303.902 43.0335 303.902 35.6706C303.902 26.283 303.902 23.3378 303.074 19.2882L309.425 22.5095H316.143C316.787 17.9077 316.787 17.1714 317.156 10.8209H311.357C308.596 10.8209 303.35 11.0971 299.577 11.8333L297.368 7.8758C302.154 8.24394 307.86 8.61209 312.646 8.61209H338.14L340.441 5.2988C340.993 4.47047 341.361 4.10233 341.821 4.10233C342.281 4.10233 342.65 4.47047 343.478 5.11473L347.619 8.42802C347.896 8.70412 348.54 9.1643 348.54 9.80856ZM335.379 49.8442V38.0636H308.872V49.8442H335.379ZM335.379 35.8547V24.7184H308.872V35.8547H335.379ZM335.379 63.9256V52.053H308.872V63.9256H335.379ZM349 82.793C349 84.9098 347.251 86.1983 346.147 86.1983C344.674 86.1983 343.754 85.278 341.637 82.885C337.588 78.2832 332.341 73.3133 327.464 71.1044L327.556 70.6443C339.152 71.4726 349 78.3753 349 82.793ZM301.694 19.3803C301.694 20.2086 300.957 20.3927 300.313 20.3927H286.324V58.4955C288.901 57.6672 292.122 56.7468 300.773 53.7097L301.141 54.3539C294.515 58.1274 285.311 63.0973 273.991 68.3434C273.162 71.0124 273.07 71.2885 272.334 71.2885C271.874 71.2885 271.414 70.8283 271.138 70.4602L265.615 63.1894C269.573 62.7292 273.531 62.177 281.722 59.784V20.3927C276.936 20.3927 272.334 20.7608 269.021 21.4051L266.904 17.4475C271.966 17.9077 277.028 18.1838 282.182 18.1838H291.478L294.055 15.2387C294.975 14.2263 295.159 14.1342 295.527 14.1342C295.987 14.1342 296.171 14.3183 297.184 15.1466L300.773 17.9997C301.233 18.3679 301.694 18.736 301.694 19.3803ZM319.733 75.062C319.733 75.7062 319.088 75.8903 318.352 75.9823C317.708 76.0744 315.039 76.2585 314.487 76.3505C304.639 81.9647 295.987 85.0939 284.115 86.8426L283.747 86.1063C290.281 83.8974 296.54 81.1364 302.338 77.639C310.897 72.3929 311.725 69.908 312.278 68.1593L318.26 73.0372C318.904 73.4974 319.733 74.2337 319.733 75.062Z" fill="currentColor"></path></svg><div class="menu_credit_disclaimer"><div data-menu="credit-title">(disclaimer)</div></div></div><div class="menu_credit_p"><p data-menu="credit-paragraph">Vesture is an intelligent digital wardrobe and daily fit logging system created by <a href="#" target="_blank"><strong>Vesture Team.</strong></a> The content, designs, and visuals displayed are intended purely for creative exploration and artistic expression.</p><p data-menu="credit-paragraph">All work showcased here is fictional and not associated with any real clients or entities. Any similarity or resemblance to actual companies, brands, or names is purely coincidental. We appreciate your interest and understanding</p></div><div class="credit_list u-vflex-left-top u-gap-main"><ul class="credit_list_wrap u-vflex-left-top"><li class="credit_list_item"><div class="u-overflow-clip"><div data-menu="c-list">Imagery</div></div><div class="u-overflow-clip"><a data-menu="c-list" href="#" class="credit_list_link">Midjourney V.61</a></div><div data-menu="c-line" class="line_wrapper is-abs"><div data-menu="c-line" class="line is-menu"></div></div></li><li class="credit_list_item"><div class="u-overflow-clip"><div data-menu="c-list">Typeset</div></div><div class="u-overflow-clip"><div data-menu="c-list"><a href="#" target="_blank" class="credit_list_link">Fragment</a> &amp; <a href="#" target="_blank" class="credit_list_link">Aeonik</a></div></div><div class="line_wrapper is-abs"><div data-menu="c-line" class="line is-menu"></div></div></li><li class="credit_list_item"><div class="u-overflow-clip"><div data-menu="c-list">Design &amp; Dev</div></div><div class="u-overflow-clip"><a data-menu="c-list" href="#" target="_blank" class="credit_list_link">Vesture Lab</a></div><div class="line_wrapper is-abs"><div data-menu="c-line" class="line is-menu"></div></div></li></ul></div></div><div class="menu_credit_close_wrap u-vflex-center-center"><div data-menu="c-close" class="menu_credit_close_btn"><div data-menu="credit-close" class="menu_credit_close_txt"><div>Close</div></div></div></div></div></div><div data-menu="credit-overlay" class="menu_credit_overlay"></div></div><div class="menu_overlay"></div></div></div><nav class="nav"><div class="nav_container u-container u-grid-custom"><div id="w-node-_2f9d6796-df40-8ea0-228b-6e8c39ea93c9-39ea93c7" class="nav_logo_wrap"><a aria-label="home logo link" href="/" aria-current="page" class="nav_logo u-overflow-clip w-inline-block w--current"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 160 30" fill="none" data-loader="nav-logo" class="nav_logo_svg">
+  <text x="0" y="23" font-family="'PP – Fragment', 'Playfair Display', Georgia, serif" font-weight="600" font-size="24" letter-spacing="3" fill="currentColor">VESTURE</text>
+</svg></a></div><div class="nav_item_wrap u-column-custom u-hflex-between-center"><div class="nav_est u-text-small u-weight-medium"><div aria-label="established since 2022" data-loader="nav-est">EST – 2025</div></div><button type="button" data-menu="openbtn" aria-label="Open navigation menu" class="nav_button_wrap u-vflex-center-center u-gap-xsmall"><div class="nav_btn_line"><div data-loader="nav-btn-line" class="line btn-rel"></div><div class="line btn-abs"></div></div><div class="nav_btn_line"><div data-loader="nav-btn-line" class="line btn-rel"></div><div class="line btn-abs"></div></div></button></div><div class="line_wrapper is-abs"><div data-loader="nav-line" class="line"></div></div></div></nav><main id="main" class="main"><section class="home_hero" id="hero"><figure class="g_visual_wrap u-cover-absolute"><img class="g_visual_img u-cover-absolute" src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=1600&q=85" alt="Vesture everyday menswear rotation" sizes="(max-width: 1923px) 100vw, 1923px" data-parallax="true" loading="eager" srcset="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=1600&q=85 500w, https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=1600&q=85 800w, https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=1600&q=85 1080w, https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=1600&q=85 1600w, https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=1600&q=85 1923w"/><div STYLE="opacity: 65%;" data-loader="overlay" class="g_visual_overlay u-cover-absolute"></div></figure><div class="h_hero_container u-container u-vflex-left-bottom"><div class="hero_layout u-grid-custom u-gap-medium"><div class="hero_svg_wrap u-column-custom"><h1 aria-label="VESTURE" class="hero_h1 u-sr-only">VESTURE</h1><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1443 320" fill="none" data-loader="svg" class="hero_svg">
+  <text x="50%" y="75%" text-anchor="middle" font-family="'PP – Fragment', 'Playfair Display', Georgia, serif" font-weight="400" font-size="270" letter-spacing="14" fill="none" stroke="currentColor" stroke-width="3" class="hero_serif_txt">VESTURE</text>
+  <path d="M 90 60 L 155 60 L 195 270 L 235 60 L 300 60 L 225 310 L 165 310 Z" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+  <path d="M 345 60 L 470 60 L 470 105 L 405 105 L 405 160 L 460 160 L 460 205 L 405 205 L 405 265 L 475 265 L 475 310 L 345 310 Z" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+  <path d="M 515 115 C 515 75 550 60 590 60 C 640 60 675 80 675 130 L 620 130 C 620 105 605 100 590 100 C 570 100 560 108 560 120 C 560 160 680 155 680 260 C 680 315 640 330 590 330 C 535 330 500 305 500 250 L 555 250 C 555 280 570 290 590 290 C 615 290 625 280 625 260 C 625 215 505 220 505 115 Z" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+  <path d="M 710 60 L 845 60 L 845 105 L 800 105 L 800 310 L 755 310 L 755 105 L 710 105 Z" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+  <path d="M 875 60 L 925 60 L 925 230 C 925 270 945 280 970 280 C 995 280 1015 270 1015 230 L 1015 60 L 1065 60 L 1065 230 C 1065 305 1025 320 970 320 C 915 320 875 305 875 230 Z" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+  <path d="M 1095 60 L 1195 60 C 1240 60 1265 85 1265 135 C 1265 180 1235 200 1200 205 L 1270 310 L 1215 310 L 1155 210 L 1145 210 L 1145 310 L 1095 310 Z M 1145 105 L 1145 165 L 1190 165 C 1210 165 1220 155 1220 135 C 1220 115 1210 105 1190 105 Z" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+  <path d="M 1290 60 L 1415 60 L 1415 105 L 1350 105 L 1350 160 L 1405 160 L 1405 205 L 1350 205 L 1350 265 L 1420 265 L 1420 310 L 1290 310 Z" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+</svg></div><div class="hero_content u-column-custom u-vflex-left-between u-gap-medium"><div class="hero_content_top u-vflex-left-top u-gap-main"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 130 36" fill="none" data-loader="home-svg-small" class="hero_svg_small">
+  <text x="50%" y="24" text-anchor="middle" font-family="'PP – Fragment', 'Playfair Display', Georgia, serif" font-size="20" letter-spacing="4" fill="currentColor">AI STYLIST</text>
+</svg><div class="g_paragraph_wrap is-global-hero u-text-"><p data-loader="para">Your personal AI stylist in your pocket. Vesture catalogs your real wardrobe and automatically coordinates the best everyday outfit for your schedule, local weather, and personal style.</p></div></div><div class="scroll_to_explore"><div data-loader="scroll-txt">scroll</div></div></div></div></div></section><section id="about" data-padding-bottom="main" data-theme="light" data-padding-top="small" class="home_intro"><div class="h_intro_container u-container"><div class="h_intro_layout u-grid-custom"><div class="h_intro_col-l u-column-custom u-vflex-left-between"><div class="kanji_wrap u-vflex-center-center u-gap-xsmall"><span style="font-family:'PP – Fragment', 'Playfair Display', serif; font-size:1.15rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--swatch--brand);">VESTURE</span><div class="kanji_content u-vflex-center-center u-gap-xsmall"><div class="kanji_title"><div data-anim="title">(DAILY STYLE)</div></div><div class="kanji_title_small"><div data-anim="title">Effortless</div></div></div></div><div class="h_intro_head"><div STYLE="max-width:  ;" class="g_heading_wrap u-overflow-clip u-text-h2"><h2 data-anim-para="true" class="g_heading">Every Line Tells a story</h2></div></div></div><div class="h_intro_col-img u-column-custom"><div class="intro_img u-visual-wrap"><figure data-scroll-parallax="false" class="g_visual_wrap u-cover-absolute"><div class="g_visual_background u-cover-absolute"></div><img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1600&q=85" loading="lazy" data-parallax="true" alt="" sizes="100vw" srcset="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1600&q=85 500w, https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1600&q=85 800w, https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1600&q=85 1080w, https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1600&q=85 1404w" class="g_visual_img u-cover-absolute"/><div data-anim-whipe="true" class="g_visual_whipe u-cover-absolute"></div></figure></div></div><div class="h_intro_col-r u-column-custom u-vflex-stretch-between u-gap-large"><div class="intro_content_wrap u-vflex-left-top ugap u-gap-medium"><div class="w-layout-vflex intro_content_p"><div STYLE="max-width: none;" class="g_paragraph_wrap u-text-"><p data-anim-para="true">Getting dressed every morning should be simple, enjoyable, and stress-free. Vesture acts as your personal stylist that knows every item in your closet, creating effortless everyday outfits that look great, feel comfortable, and fit your day perfectly. </p></div></div><div><div data-anims="fade-in" data-button-style="primary" data-anim="button" class="btn_main_wrap"><div data-button="whipe" class="btn_whipe"></div><div aria-hidden="true" class="btn_main_layout u-gap-xsmall u-hflex-center-center"><div data-button="text-rel" class="btn_main_text">About Us</div><div data-button="text-abs" class="btn_main_text is_abs">About Us</div></div><div class="g_clickable_wrap u-cover-absolute u-radius-inherit u-zindex-3"><a href="#about" class="g_clickable_link u-cover-absolute u-radius-inherit u-display-block w-inline-block"><span class="g_clickable_text u-sr-only">About Us</span></a><button type="button" class="g_clickable_btn u-cover-absolute u-radius-inherit u-display-none"><span class="g_clickable_text u-sr-only">About Us</span></button></div></div></div></div><div class="intro_img_small u-visual-wrap"><figure data-scroll-parallax="false" class="g_visual_wrap u-cover-absolute"><div class="g_visual_background u-cover-absolute"></div><img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1600&q=85" loading="lazy" data-parallax="true" alt="" sizes="100vw" srcset="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1600&q=85 500w, https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1600&q=85 692w" class="g_visual_img u-cover-absolute"/><div data-anim-whipe="true" class="g_visual_whipe u-cover-absolute"></div></figure></div></div></div></div><div class="line_wrapper is-abs"><div data-anim="line" class="line"></div></div></section><section id="outfits" data-padding-top="main" data-theme="light" class="scroll_section"><div data-big-text="trigger" class="sticky_scroll_trigger"><div data-big-text="trigger" class="sticky_track"><div class="sticky_elements"><div class="big_txt_container u-container u-vflex-center-center u-gap-small"><div class="kanji_wrap u-vflex-center-center u-gap-xsmall"><span style="font-family:'PP – Fragment', 'Playfair Display', serif; font-size:1.15rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--swatch--brand);">VESTURE</span><div class="kanji_content u-vflex-center-center u-gap-xsmall"><div class="kanji_title"><div data-big-text="text">(PERSONALIZED)</div></div><div class="kanji_title_small"><div data-big-text="text">Daily Outfits</div></div></div></div><div class="big_txt_row u-hflex-left-top u-gap-small u-overflow-clip"><div data-big-text="wrapper" class="big_txt u-text-display is-scroll-txt"><div data-big-text="head">the art of</div></div></div><div class="big_txt_row u-hflex-left-top u-gap-small u-overflow-clip"><span data-big-text="wrapper" class="big_txt u-text-display is-scroll-txt"><div data-big-text="head">innovation</div></span></div></div><div data-big-img="track" class="big_img_track"><div class="big_img_container-top u-container u-grid-custom"><div class="big_img_top-1 u-column-custom"><figure data-scroll-parallax="true" class="g_visual_wrap u-cover-absolute"><div class="g_visual_background u-cover-absolute"></div><img src="https://images.unsplash.com/photo-1520975954732-35dd22299614?auto=format&fit=crop&w=1200&q=85" loading="lazy" data-parallax="true" alt="" sizes="(max-width: 1188px) 100vw, 1188px" srcset="https://images.unsplash.com/photo-1520975954732-35dd22299614?auto=format&fit=crop&w=1200&q=85 500w, https://images.unsplash.com/photo-1520975954732-35dd22299614?auto=format&fit=crop&w=1200&q=85 800w, https://images.unsplash.com/photo-1520975954732-35dd22299614?auto=format&fit=crop&w=1200&q=85 1080w, https://images.unsplash.com/photo-1520975954732-35dd22299614?auto=format&fit=crop&w=1200&q=85 1188w" class="g_visual_img u-cover-absolute"/></figure></div><div id="w-node-ec5213ad-a3f5-9d76-ee03-1cab1e8d1928-302fd411" class="big_img_top-2 u-column-custom"><figure data-scroll-parallax="true" class="g_visual_wrap u-cover-absolute"><div class="g_visual_background u-cover-absolute"></div><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=85" loading="lazy" data-parallax="true" alt="" sizes="(max-width: 1188px) 100vw, 1188px" srcset="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=85 500w, https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=85 800w, https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=85 1080w, https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=85 1188w" class="g_visual_img u-cover-absolute"/></figure></div><div id="w-node-_5f74c7bd-8ca2-0e8e-b887-0ed6ce008ef2-302fd411" class="big_img_top-3 u-column-custom"><figure data-scroll-parallax="true" class="g_visual_wrap u-cover-absolute"><div class="g_visual_background u-cover-absolute"></div><img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1200&q=85" loading="lazy" data-parallax="true" alt="" sizes="(max-width: 2224px) 100vw, 2224px" srcset="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1200&q=85 500w, https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1200&q=85 800w, https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1200&q=85 1080w, https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1200&q=85 1600w, https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1200&q=85 2000w, https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1200&q=85 2224w" class="g_visual_img u-cover-absolute"/></figure></div></div><div class="big_img_container-btm u-container u-grid-custom"><div class="big_img_btm-1 u-column-custom"><figure data-scroll-parallax="true" class="g_visual_wrap u-cover-absolute"><div class="g_visual_background u-cover-absolute"></div><img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1200&q=85" loading="lazy" data-parallax="true" alt="" sizes="100vw" srcset="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1200&q=85 500w, https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1200&q=85 800w, https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1200&q=85 1080w, https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1200&q=85 1600w, https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1200&q=85 2000w, https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1200&q=85 2600w, https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1200&q=85 2644w" class="g_visual_img u-cover-absolute"/></figure></div><div id="w-node-_01b22deb-0792-5fe3-2637-bc65dc3cfaf1-302fd411" class="big_img_btm-3 u-column-custom"><figure data-scroll-parallax="true" class="g_visual_wrap u-cover-absolute"><div class="g_visual_background u-cover-absolute"></div><img src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908?auto=format&fit=crop&w=1200&q=85" loading="lazy" data-parallax="true" alt="" sizes="100vw" srcset="https://images.unsplash.com/photo-1479064555552-3ef4979f8908?auto=format&fit=crop&w=1200&q=85 500w, https://images.unsplash.com/photo-1479064555552-3ef4979f8908?auto=format&fit=crop&w=1200&q=85 800w, https://images.unsplash.com/photo-1479064555552-3ef4979f8908?auto=format&fit=crop&w=1200&q=85 1080w, https://images.unsplash.com/photo-1479064555552-3ef4979f8908?auto=format&fit=crop&w=1200&q=85 1600w, https://images.unsplash.com/photo-1479064555552-3ef4979f8908?auto=format&fit=crop&w=1200&q=85 2000w, https://images.unsplash.com/photo-1479064555552-3ef4979f8908?auto=format&fit=crop&w=1200&q=85 2242w" class="g_visual_img u-cover-absolute"/></figure></div><div id="w-node-c631f7bf-3a65-2de2-2d6f-d4880bc0b151-302fd411" class="big_img_btm-2 u-column-custom"><figure data-scroll-parallax="true" class="g_visual_wrap u-cover-absolute"><div class="g_visual_background u-cover-absolute"></div><img src="https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?auto=format&fit=crop&w=1200&q=85" loading="lazy" data-parallax="true" alt="" sizes="100vw" srcset="https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?auto=format&fit=crop&w=1200&q=85 500w, https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?auto=format&fit=crop&w=1200&q=85 800w, https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?auto=format&fit=crop&w=1200&q=85 1080w, https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?auto=format&fit=crop&w=1200&q=85 1600w, https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?auto=format&fit=crop&w=1200&q=85 1968w" class="g_visual_img u-cover-absolute"/></figure></div></div></div></div></div></div><div data-theme="dark" class="home_project_wrap w-dyn-list"><div role="list" class="home_project_list w-dyn-items"><div role="listitem" class="home_project_item u-container u-vflex-center-center w-dyn-item"><figure data-scroll-parallax="false" class="g_visual_wrap u-cover-absolute"><div class="g_visual_background u-cover-absolute"></div><img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=1600&q=85" loading="lazy" data-parallax="true" alt="The Smart Casual Routine" class="g_visual_img u-cover-absolute"/><div STYLE="opacity: 70%;" class="g_visual_overlay u-cover-absolute"></div></figure><div class="home_project_content u-grid-custom"><div class="home_project_info u-column-custom u-vflex-left-bottom u-gap-medium"><span class="home_project_kanji" style="font-family:'PP – Fragment', 'Playfair Display', serif; font-size:1.6rem; letter-spacing:0.15em; color:currentColor;">01</span><div class="home_project_title u-text-transform-uppercase"><h3 data-anim-para="true">The Smart Casual Routine</h3></div></div><div class="home_project_right u-column-custom u-vflex-left-between"><div class="home_project_num"><div data-anim="title">1</div><div data-anim="title">/</div><div data-anim="title">3</div></div><div data-anim="button" data-button-style="secondary" class="btn_main_wrap is-secondary"><div data-button="whipe" class="btn_whipe"></div><div aria-hidden="true" class="btn_main_layout u-gap-xsmall u-hflex-center-center"><div data-button="text-rel" class="btn_main_text is-secondary">see outfit</div><div data-button="text-abs" class="btn_main_text abs_secondary">see outfit</div></div><div class="g_clickable_wrap u-cover-absolute u-radius-inherit u-zindex-3"><a href="/project/shizuka-gardens" class="g_clickable_link u-cover-absolute u-radius-inherit u-display-block w-inline-block"><span class="g_clickable_text u-sr-only">Button Text</span></a><button type="button" class="g_clickable_btn u-cover-absolute u-radius-inherit u-display-none"><span class="g_clickable_text u-sr-only">Button Text</span></button></div></div></div></div></div><div role="listitem" class="home_project_item u-container u-vflex-center-center w-dyn-item"><figure data-scroll-parallax="false" class="g_visual_wrap u-cover-absolute"><div class="g_visual_background u-cover-absolute"></div><img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1600&q=85" loading="lazy" data-parallax="true" alt="Earth Tone Streetwear" class="g_visual_img u-cover-absolute"/><div STYLE="opacity: 70%;" class="g_visual_overlay u-cover-absolute"></div></figure><div class="home_project_content u-grid-custom"><div class="home_project_info u-column-custom u-vflex-left-bottom u-gap-medium"><span class="home_project_kanji" style="font-family:'PP – Fragment', 'Playfair Display', serif; font-size:1.6rem; letter-spacing:0.15em; color:currentColor;">02</span><div class="home_project_title u-text-transform-uppercase"><h3 data-anim-para="true">Earth Tone Streetwear</h3></div></div><div class="home_project_right u-column-custom u-vflex-left-between"><div class="home_project_num"><div data-anim="title">2</div><div data-anim="title">/</div><div data-anim="title">3</div></div><div data-anim="button" data-button-style="secondary" class="btn_main_wrap is-secondary"><div data-button="whipe" class="btn_whipe"></div><div aria-hidden="true" class="btn_main_layout u-gap-xsmall u-hflex-center-center"><div data-button="text-rel" class="btn_main_text is-secondary">see outfit</div><div data-button="text-abs" class="btn_main_text abs_secondary">see outfit</div></div><div class="g_clickable_wrap u-cover-absolute u-radius-inherit u-zindex-3"><a href="/project/kawa-lofts" class="g_clickable_link u-cover-absolute u-radius-inherit u-display-block w-inline-block"><span class="g_clickable_text u-sr-only">Button Text</span></a><button type="button" class="g_clickable_btn u-cover-absolute u-radius-inherit u-display-none"><span class="g_clickable_text u-sr-only">Button Text</span></button></div></div></div></div></div><div role="listitem" class="home_project_item u-container u-vflex-center-center w-dyn-item"><figure data-scroll-parallax="false" class="g_visual_wrap u-cover-absolute"><div class="g_visual_background u-cover-absolute"></div><img src="https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?auto=format&fit=crop&w=1600&q=85" loading="lazy" data-parallax="true" alt="The Weekend Minimalist" class="g_visual_img u-cover-absolute"/><div STYLE="opacity: 70%;" class="g_visual_overlay u-cover-absolute"></div></figure><div class="home_project_content u-grid-custom"><div class="home_project_info u-column-custom u-vflex-left-bottom u-gap-medium"><span class="home_project_kanji" style="font-family:'PP – Fragment', 'Playfair Display', serif; font-size:1.6rem; letter-spacing:0.15em; color:currentColor;">03</span><div class="home_project_title u-text-transform-uppercase"><h3 data-anim-para="true">The Weekend Minimalist</h3></div></div><div class="home_project_right u-column-custom u-vflex-left-between"><div class="home_project_num"><div data-anim="title">3</div><div data-anim="title">/</div><div data-anim="title">3</div></div><div data-anim="button" data-button-style="secondary" class="btn_main_wrap is-secondary"><div data-button="whipe" class="btn_whipe"></div><div aria-hidden="true" class="btn_main_layout u-gap-xsmall u-hflex-center-center"><div data-button="text-rel" class="btn_main_text is-secondary">see outfit</div><div data-button="text-abs" class="btn_main_text abs_secondary">see outfit</div></div><div class="g_clickable_wrap u-cover-absolute u-radius-inherit u-zindex-3"><a href="/project/kinsei-pavilion" class="g_clickable_link u-cover-absolute u-radius-inherit u-display-block w-inline-block"><span class="g_clickable_text u-sr-only">Button Text</span></a><button type="button" class="g_clickable_btn u-cover-absolute u-radius-inherit u-display-none"><span class="g_clickable_text u-sr-only">Button Text</span></button></div></div></div></div></div></div></div></section><section id="system" data-padding-bottom="main" data-theme="light" data-padding-top="main" class="home_sustain"><div class="h_sustain_container u-container"><div class="h_sustain_layout u-grid-custom"><div class="h_sustain_col-img u-column-custom"><div class="intro_img u-visual-wrap"><figure data-scroll-parallax="false" class="g_visual_wrap u-cover-absolute"><div class="g_visual_background u-cover-absolute"></div><img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1600&q=85" loading="lazy" data-parallax="true" alt="" sizes="(max-width: 1074px) 100vw, 1074px" srcset="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1600&q=85 500w, https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1600&q=85 800w, https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1600&q=85 1074w" class="g_visual_img u-cover-absolute"/><div data-anim-whipe="true" class="g_visual_whipe u-cover-absolute"></div></figure></div></div><div class="h_sustain_col u-column-custom u-vflex-left-between u-gap-medium"><div class="kanji_wrap u-vflex-center-center u-gap-xsmall"><span style="font-family:'PP – Fragment', 'Playfair Display', serif; font-size:1.15rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--swatch--brand);">VESTURE</span><div class="kanji_content u-vflex-center-center u-gap-xsmall"><div class="kanji_title"><div data-anim="title">(YOUR CLOSET)</div></div><div class="kanji_title_small"><div data-anim="title">Wardrobe System</div></div></div></div><div class="w-layout-vflex h_sustain_head"><div STYLE="max-width:  none;" class="g_heading_wrap u-overflow-clip u-text-h2"><h2 data-anim-para="true" class="g_heading">Systems That Elevate Daily Living</h2></div></div></div><div class="h_sustain_col-r u-column-custom u-vflex-stretch-between u-gap-medium"><div class="sustain_img_small u-visual-wrap"><figure data-scroll-parallax="false" class="g_visual_wrap u-cover-absolute"><div class="g_visual_background u-cover-absolute"></div><img src="https://images.unsplash.com/photo-1550614000-4895a10e1bfd?auto=format&fit=crop&w=1600&q=85" loading="lazy" data-parallax="true" alt="" class="g_visual_img u-cover-absolute"/><div data-anim-whipe="true" class="g_visual_whipe u-cover-absolute"></div></figure></div><div class="sustain_content_wrap u-vflex-left-top u-gap-large"><div class="w-layout-vflex sustain_content_p"><div STYLE="max-width: none;" class="g_paragraph_wrap u-text-"><p data-anim-para="true">No more staring at a full closet wondering what to wear. Vesture catalogs your real clothes with automatic background removal, remembers your preferences, and suggests versatile combinations so you always step out feeling confident.</p></div></div><div><div data-anims="fade-in" data-button-style="primary" data-anim="button" class="btn_main_wrap"><div data-button="whipe" class="btn_whipe"></div><div aria-hidden="true" class="btn_main_layout u-gap-xsmall u-hflex-center-center"><div data-button="text-rel" class="btn_main_text">Capsule System</div><div data-button="text-abs" class="btn_main_text is_abs">Capsule System</div></div><div class="g_clickable_wrap u-cover-absolute u-radius-inherit u-zindex-3"><a href="#capsule" class="g_clickable_link u-cover-absolute u-radius-inherit u-display-block w-inline-block"><span class="g_clickable_text u-sr-only">Capsule System</span></a><button type="button" class="g_clickable_btn u-cover-absolute u-radius-inherit u-display-none"><span class="g_clickable_text u-sr-only">Capsule System</span></button></div></div></div></div></div></div></div><div class="line_wrapper is-abs"><div data-anim="line" class="line"></div></div></section><section id="stylist" data-padding-bottom="main" data-theme="light" data-padding-top="main" class="home_service"><div class="h_service_container u-container"><div class="h_service_layout u-vflex-center-center u-gap-medium"><div class="big_txt_row u-hflex-between-top u-gap-large"><div class="kanji_wrap u-vflex-center-center u-gap-xsmall"><span style="font-family:'PP – Fragment', 'Playfair Display', serif; font-size:1.15rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--swatch--brand);">VESTURE</span><div class="kanji_content u-vflex-center-center u-gap-xsmall"><div class="kanji_title"><div data-anim="title">(AI ASSISTANT)</div></div><div class="kanji_title_small"><div data-anim="title">Personal Stylist</div></div></div></div><span class="big_txt u-text-display"><div data-anim="title">Precision</div></span></div><div class="big_txt_row u-hflex-between-center u-gap-large"><span data-anim="title" class="big_txt u-text-display"><div>In</div></span><div class="big_txt_img-big u-visual-wrap"><figure data-scroll-parallax="false" class="g_visual_wrap u-cover-absolute"><div class="g_visual_background u-cover-absolute"></div><img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1600&q=85" loading="lazy" data-parallax="true" alt="" sizes="(max-width: 798px) 100vw, 798px" srcset="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1600&q=85 500w, https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1600&q=85 798w" class="g_visual_img u-cover-absolute"/><div data-anim-whipe="true" class="g_visual_whipe u-cover-absolute"></div></figure></div><span class="big_txt u-text-display"><div data-anim="title">Every</div></span></div><div class="big_txt_row u-hflex-between-center u-gap-large mob"><span class="big_txt u-text-display"><div data-anim="title">DEsign</div></span><div class="sustain_content_wrap u-column-custom u-vflex-left-top u-gap-medium"><div STYLE="max-width: 29ch;" class="g_paragraph_wrap u-text-"><p data-anim-para="true">Whether dressing for work, weekend coffee, travel, or date night, Vesture delivers instant styling advice tailored to the exact clothes you own and your local weather.</p></div><div><div data-anims="fade-in" data-button-style="primary" data-anim="button" class="btn_main_wrap"><div data-button="whipe" class="btn_whipe"></div><div aria-hidden="true" class="btn_main_layout u-gap-xsmall u-hflex-center-center"><div data-button="text-rel" class="btn_main_text">our system</div><div data-button="text-abs" class="btn_main_text is_abs">our system</div></div><div class="g_clickable_wrap u-cover-absolute u-radius-inherit u-zindex-3"><a href="#system" class="g_clickable_link u-cover-absolute u-radius-inherit u-display-block w-inline-block"><span class="g_clickable_text u-sr-only">our system</span></a><button type="button" class="g_clickable_btn u-cover-absolute u-radius-inherit u-display-none"><span class="g_clickable_text u-sr-only">our system</span></button></div></div></div></div></div></div></div><div class="line_wrapper is-abs"><div class="line"></div></div></section><section id="manifesto" data-theme="dark" class="g_quotes"><div class="quotes_container u-container u-vflex-stretch-between"><div class="quotes_top"><div class="quotes_kanji_parent u-vflex-left-top u-gap-small u-text-transform-uppercase"><div class="quotes_flex u-vflex-center-center u-gap-main"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 520 60" fill="none" data-anims="fade-in" class="quotes_kanji_svg">
+  <text x="50%" y="42" text-anchor="middle" font-family="'PP – Fragment', 'Playfair Display', Georgia, serif" font-size="34" letter-spacing="8" fill="currentColor">EVERYDAY CONFIDENCE</text>
+</svg><div STYLE="max-width: none;" class="g_heading_wrap u-overflow-clip u-text-h5"><div data-anim="title">(DAILY LIVING)</div></div></div></div></div><div class="quotes_btm u-grid-custom"><div class="quotes_paragraph u-column-custom"><div STYLE="max-width: none;" class="g_paragraph_wrap u-text-"><p data-anim-para="true">Great personal style should be accessible to everyone. When your personal stylist knows what you own and how to pair it, looking and feeling your best takes less than thirty seconds a day.</p></div></div></div><figure data-scroll-parallax="false" class="g_visual_wrap u-cover-absolute"><div class="g_visual_background u-cover-absolute"></div><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1600&q=85" loading="lazy" data-parallax="true" alt="" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1600&q=85 500w, https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1600&q=85 800w, https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1600&q=85 1080w, https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1600&q=85 1600w, https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1600&q=85 1920w" class="g_visual_img u-cover-absolute"/><div STYLE="opacity: 60%;" class="g_visual_overlay u-cover-absolute"></div></figure></div></section><section id="download" data-padding-top="main" data-theme="light" data-padding-bottom="main" class="g_cta"><div class="cta_container u-container u-grid-custom"><div class="cta_col_left u-column-custom u-vflex-left-between"><div class="kanji_wrap u-vflex-center-center u-gap-xsmall"><span style="font-family:'PP – Fragment', 'Playfair Display', serif; font-size:1.15rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--swatch--brand);">VESTURE</span><div class="kanji_content u-vflex-center-center u-gap-xsmall"><div class="kanji_title"><div data-anim="title">(GET STARTED)</div></div><div class="kanji_title_small"><div data-anim="title">Join Vesture</div></div></div></div><div class="cta_img_small u-visual-wrap"><figure data-scroll-parallax="false" class="g_visual_wrap u-cover-absolute"><div class="g_visual_background u-cover-absolute"></div><img src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=1600&q=85" loading="lazy" data-parallax="true" alt="" sizes="(max-width: 1889px) 100vw, 1889px" srcset="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=1600&q=85 500w, https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=1600&q=85 800w, https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=1600&q=85 1080w, https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=1600&q=85 1600w, https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=1600&q=85 1889w" class="g_visual_img u-cover-absolute"/></figure></div></div><div class="cta_col_mid u-column-custom u-vflex-left-top u-gap-medium"><div class="cta_content_top u-vflex-left-top u-gap-medium"><div STYLE="max-width: none;" class="g_heading_wrap u-overflow-clip u-text-h2"><h2 data-anim-para="true" class="g_heading">Craft Your Daily Uniform</h2></div><div STYLE="max-width: none;" class="g_paragraph_wrap u-text-"><p data-anim-para="true">Download Vesture today for iOS and Android. Start cataloging your wardrobe in minutes and let your AI personal stylist curate your best daily looks.<br/></p></div><div data-anims="fade-in" data-button-style="primary" data-anim="button" class="btn_main_wrap"><div data-button="whipe" class="btn_whipe"></div><div aria-hidden="true" class="btn_main_layout u-gap-xsmall u-hflex-center-center"><div data-button="text-rel" class="btn_main_text">Download Vesture</div><div data-button="text-abs" class="btn_main_text is_abs">Download Vesture</div></div><div class="g_clickable_wrap u-cover-absolute u-radius-inherit u-zindex-3"><a href="#contact" class="g_clickable_link u-cover-absolute u-radius-inherit u-display-block w-inline-block"><span class="g_clickable_text u-sr-only">Download Vesture</span></a><button type="button" class="g_clickable_btn u-cover-absolute u-radius-inherit u-display-none"><span class="g_clickable_text u-sr-only">Download Vesture</span></button></div></div></div></div><div class="cta_col-img u-column-custom"><div class="cta_col-img_big u-visual-wrap"><figure data-scroll-parallax="false" class="g_visual_wrap u-cover-absolute"><div class="g_visual_background u-cover-absolute"></div><img src="https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=1600&q=85" loading="lazy" data-parallax="true" alt="" sizes="(max-width: 1293px) 100vw, 1293px" srcset="https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=1600&q=85 500w, https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=1600&q=85 800w, https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=1600&q=85 1080w, https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=1600&q=85 1293w" class="g_visual_img u-cover-absolute"/></figure></div></div></div></section></main><footer class="footer"><div class="footer_wrap"><div class="footer_top u-container u-grid-custom"><nav class="footer_nav_col u-column-custom"><ul class="footer_nav_list u-vflex-left-top u-gap-row-small"><li class="footer_nav_item u-hflex-left-top u-gap-main"><div class="footer_num"><div data-anim="title">(1)</div></div><a href="/" aria-current="page" class="footer_nav_link u-text-h4 w-inline-block w--current"><div data-hover="link" data-anim="title">Home</div></a><link rel="prefetch" href="/"/></li><li class="footer_nav_item u-hflex-left-top u-gap-main"><div class="footer_num"><div data-anim="title">(2)</div></div><a href="#about" class="footer_nav_link u-text-h4 w-inline-block"><div data-hover="link" data-anim="title">About</div></a><link rel="prefetch" href="#about"/></li><li class="footer_nav_item u-hflex-left-top u-gap-main"><div class="footer_num"><div data-anim="title">(3)</div></div><a href="#projects" class="footer_nav_link u-text-h4 w-inline-block"><div data-hover="link" data-anim="title">Project</div></a><link rel="prefetch" href="#projects"/></li><li class="footer_nav_item u-hflex-left-top u-gap-main"><div class="footer_num"><div data-anim="title">(4)</div></div><a href="#capsule" class="footer_nav_link u-text-h4 w-inline-block"><div data-hover="link" data-anim="title">Capsule System</div></a><link rel="prefetch" href="#capsule"/></li><li class="footer_nav_item u-hflex-left-top u-gap-main"><div class="footer_num"><div data-anim="title">(5)</div></div><a href="#system" class="footer_nav_link u-text-h4 w-inline-block"><div data-hover="link" data-anim="title">Service</div></a><link rel="prefetch" href="#system"/></li><li class="footer_nav_item u-hflex-left-top u-gap-main"><div class="footer_num"><div data-anim="title">(6)</div></div><a href="#journal" class="footer_nav_link u-text-h4 w-inline-block"><div data-hover="link" data-anim="title">Journal</div></a><link rel="prefetch" href="#journal"/></li><li class="footer_nav_item u-hflex-left-top u-gap-main"><div class="footer_num"><div data-anim="title">(7)</div></div><a href="#contact" class="footer_nav_link u-text-h4 w-inline-block"><div data-hover="link" data-anim="title">Contact</div></a></li></ul></nav><div class="footer_info_col u-column-custom u-vflex-right-between u-gap-large"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 830 360" fill="none" class="footer_info_svg"><path d="M72.6125 359.45H65.7486C44.7958 337.052 32.5131 322.602 19.8691 292.979C6.14136 261.549 0 229.036 0 198.33C0 166.9 6.50261 134.387 19.8691 103.681C32.5131 74.0575 44.7958 59.246 65.7486 36.8481H72.6125C57.0785 64.3036 28.5392 113.434 28.5392 198.33C28.5392 283.225 57.0785 332.717 72.6125 359.45Z" fill="none" stroke="currentColor"></path><path d="M408.866 212.419C408.866 216.392 404.892 216.392 403.447 216.392H345.285C345.646 226.869 346.007 272.748 346.007 280.335C346.007 302.371 342.756 317.544 310.604 325.131C305.185 309.958 302.295 302.01 275.924 294.424V291.534C280.62 291.895 304.824 293.701 305.908 293.701C324.693 293.701 325.416 289.005 325.777 282.502C326.138 273.11 325.777 226.869 325.777 216.392H154.903C154.903 223.618 155.264 231.926 155.264 244.209C155.264 254.686 155.625 306.706 155.264 311.764C154.541 324.047 139.73 325.492 138.285 325.492C134.311 325.492 131.421 323.686 131.421 319.35C131.421 318.267 131.782 313.209 131.782 312.125C132.866 298.398 134.672 231.565 135.034 216.392C119.5 216.392 100.353 217.476 85.5415 220.366L76.8714 204.832C93.8504 206.277 117.693 207 135.395 207.722C136.479 178.461 137.201 153.895 137.201 121.021C137.201 94.2879 135.756 83.8114 132.866 67.5549L159.238 81.6439H231.128V34.6806H142.259C135.034 34.6806 112.997 35.4031 96.0179 38.6544L87.3478 23.1204C106.133 24.5654 128.531 26.0104 147.316 26.0104H351.787L364.431 10.4764C366.599 7.58637 368.044 6.14134 369.85 6.14134C372.018 6.14134 375.991 9.39265 376.353 9.7539L394.777 25.2879C396.222 26.733 398.389 28.178 398.389 30.7068C398.389 34.6806 394.416 34.6806 392.971 34.6806H249.191V81.6439H322.526L326.499 74.78C329.028 70.8062 330.112 69.7224 331.918 69.7224C333.363 69.7224 334.086 70.0837 338.06 72.6125L352.51 82.0051C354.316 83.0889 356.122 84.8952 356.122 86.7015C356.122 90.314 352.51 92.8428 343.478 98.2617C343.84 113.796 344.923 190.382 345.285 207.722H362.986L375.63 191.105C377.075 189.298 379.243 186.769 381.049 186.769C382.133 186.769 384.3 187.492 387.552 190.382L405.253 207C407.421 208.806 408.866 210.251 408.866 212.419ZM325.777 144.141V90.314H249.191V144.141H325.777ZM325.777 207.722V152.811H249.191V207.722H325.777ZM231.128 144.141V90.314H155.264V144.141H231.128ZM231.128 207.722V152.811H155.264V207.722H231.128Z" fill="none" stroke="currentColor"></path><path d="M746.279 298.036C746.279 301.288 743.028 302.01 740.499 302.01H476.421C463.777 302.01 443.546 303.455 429.819 305.984L421.51 290.45C448.604 292.617 474.614 293.34 481.478 293.34H575.044V196.523H526.997C514.353 196.523 494.483 197.968 480.756 200.858L472.086 185.324C499.18 187.492 525.552 187.853 532.054 187.853H575.044C575.044 163.649 575.044 157.869 574.682 106.932H493.761C470.279 167.984 446.075 201.942 427.29 217.837L424.4 215.67C454.023 175.209 488.342 67.1936 488.342 36.8481C488.342 35.4031 488.342 33.9581 487.62 29.9843L522.3 47.3246C524.107 48.4083 525.552 50.2146 525.552 52.7434C525.552 57.4397 521.216 58.8848 519.771 59.246C518.326 59.9685 511.101 62.4973 509.656 62.8586C506.044 74.0575 502.792 83.8114 497.012 98.2617H574.682C574.321 87.7852 574.682 41.1832 573.96 31.7905C573.237 21.3141 569.625 11.1989 565.651 0L603.583 10.4764C605.75 11.1989 609.363 13.0052 609.363 15.8953C609.363 18.0628 607.557 20.2303 606.112 21.6754C604.667 23.4816 597.803 29.623 596.358 31.068C596.358 41.5445 595.996 88.869 595.996 98.2617H672.583L684.143 82.7277C685.949 80.1989 687.394 78.3926 689.201 78.3926C691.368 78.3926 694.619 80.9214 696.064 82.0051L716.656 97.5392C718.462 98.9842 720.269 100.79 720.269 103.319C720.269 106.571 717.017 106.932 714.85 106.932H595.996C595.635 132.942 595.635 162.927 595.635 187.853H653.797L664.996 172.319C667.886 167.984 668.609 167.984 670.415 167.984C671.86 167.984 673.305 168.345 677.279 171.597L696.064 187.131C697.871 188.937 699.677 190.382 699.677 192.911C699.677 196.162 696.426 196.523 693.897 196.523H595.635C595.274 212.057 595.635 279.612 595.274 293.34H696.064L711.598 276.722C714.85 273.11 715.211 272.748 717.017 272.748C719.185 272.748 721.714 274.555 723.881 276.361L742.667 292.617C744.473 294.424 746.279 295.508 746.279 298.036Z" fill="none" stroke="currentColor"></path><path d="M829.368 198.33C829.368 229.036 823.227 261.549 809.499 292.979C796.855 322.602 784.572 337.052 763.619 359.45H756.755C772.289 332.717 800.829 283.225 800.829 198.33C800.829 113.434 772.651 64.3036 756.755 36.8481H763.619C784.572 59.246 796.855 74.0575 809.499 103.681C822.865 134.387 829.368 166.9 829.368 198.33Z" fill="none" stroke="currentColor">stroke</path></svg><div class="footer_info_row u-grid-custom"><div class="footer_info_left u-grid-subgrid u-vflex-left-top u-gap-medium"><div class="footer_info_item u-vflex-left-top"><div class="footer_info_title u-text-transform-uppercase"><div data-anim="title">email</div></div><div class="footer_info_link u-color-faded"><a href="mailto:vesture.stylist@gmail.com" data-hover="link" data-anim="title" class="footer_link_item">vesture.stylist@gmail.com</a></div></div><div class="footer_info_item u-vflex-left-top"><div class="footer_info_title u-text-transform-uppercase"><div data-anim="title">Phone</div></div><div class="footer_info_link u-color-faded"><a href="#" data-hover="link" data-anim="title" class="footer_link_item">+1 (800) 582-8873</a></div></div><div class="footer_info_item u-vflex-left-top"><div class="footer_info_title u-text-transform-uppercase"><div data-anim="title">Social</div></div><ul class="footer_info_social u-vflex-left-top"><li class="footer_info_link u-color-faded"><a data-hover="link" data-anim="title" href="#" class="footer_link_item">Instagram</a></li><li class="footer_info_link u-color-faded"><a data-hover="link" data-anim="title" href="#" class="footer_link_item">Facebook</a></li><li class="footer_info_link u-color-faded"><a data-hover="link" data-anim="title" href="#" class="footer_link_item">Linked-in</a></li></ul></div></div><div class="footer_info_right u-grid-subgrid u-vflex-left-top u-gap-medium"><div class="footer_info_item u-vflex-left-top"><div class="footer_info_title u-text-transform-uppercase"><div data-anim="title">Office</div></div><div class="footer_info_link u-color-faded"><a data-hover="link" data-anim="title" href="#" target="_blank" class="footer_link_item">Tokyo · London · New York</a></div></div><div class="footer_info_item u-vflex-left-top"><div data-anim="title" class="footer_info_link u-color-faded">Monday to Friday:<br/>9:00 AM - 6:00 PM</div></div><div class="footer_info_item u-vflex-left-top"><div class="footer_info_link u-color-faded"><a data-anim="title" href="#" target="_blank" class="footer_link_item">139.8107° E<br/>35.7100° N</a></div></div></div></div></div></div><div class="line_wrapper"><div data-anim="line" class="line"></div></div><div class="footer_btm u-container"><div class="footer_credit_wrap u-grid-custom"><div id="w-node-b74b997f-118a-76a1-33a8-2b019e15bb30-9e15babd" class="footer_credit_item"><div data-anim="title">©25 VESTURE – All rights reserved</div></div><div class="footer_credit_right u-column-custom"><div class="footer_credit_sub u-grid-custom"><div class="footer_credit_item"><a data-hover="link" data-anim="title" href="/terms" class="footer_credit_small">Terms of service</a></div><div class="footer_credit_item u-grid-subgrid"><a data-hover="link" data-anim="title" id="w-node-b74b997f-118a-76a1-33a8-2b019e15bb39-9e15babd" href="/privacy" class="footer_credit_small">Privacy Policy</a><link rel="prefetch" href="/privacy"/><a data-hover="link" data-anim="title" id="w-node-b74b997f-118a-76a1-33a8-2b019e15bb3b-9e15babd" href="#" target="_blank" class="footer_credit_small">Site: Vesture Lab</a></div></div></div></div></div></div></footer></div><script src="jquery.min.js" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="runtime-1.js" type="text/javascript"></script><script src="runtime-2.js" type="text/javascript"></script><script src="runtime-3.js" type="text/javascript"></script><script src="runtime-main.js" type="text/javascript"></script>
+
+
+                
+<script>
+  (function() {
+    // Safety auto-dismiss preloader after max 2.2 seconds if not dismissed by GSAP
+    var dismissLoader = function() {
+      var loader = document.querySelector('.loader');
+      if (loader && !loader.classList.contains('is-loaded')) {
+        loader.classList.add('is-loaded');
+        setTimeout(function() { loader.style.display = 'none'; }, 1000);
+      }
+    };
+    window.addEventListener('load', function() {
+      setTimeout(dismissLoader, 1200);
+    });
+    setTimeout(dismissLoader, 2200);
+  })();
+</script>
+</body></html>
+
