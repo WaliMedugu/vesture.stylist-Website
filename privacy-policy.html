@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Vesture</title>
+  <style>
+    @font-face {
+      font-family: 'Editorial New';
+      src: url('./assets/normalisboring.es/wp-content/themes/normalisboring25/css/fonts/editorialnew-regular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Editorial New';
+      src: url('./assets/normalisboring.es/wp-content/themes/normalisboring25/css/fonts/editorialnew-italic.woff2') format('woff2');
+      font-weight: normal;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: 'Izmir';
+      src: url('./assets/normalisboring.es/wp-content/themes/normalisboring25/css/fonts/Izmir-Regular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Izmir';
+      src: url('./assets/normalisboring.es/wp-content/themes/normalisboring25/css/fonts/Izmir-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    :root {
+      --bg: #fbfaf6;
+      --card-bg: #ffffff;
+      --border: #e6e3da;
+      --text: #141414;
+      --muted: #666666;
+      --f-serif: 'Editorial New', Georgia, serif;
+      --f-sans: 'Izmir', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--f-sans);
+      line-height: 1.7;
+      padding: 0;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      width: 100%;
+      border-bottom: 1px solid var(--border);
+      background-color: var(--bg);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: var(--f-sans);
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .back-btn {
+      font-family: var(--f-sans);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--text);
+      padding: 8px 18px;
+      border: 1px solid var(--text);
+      border-radius: 999px;
+    }
+    .back-btn:hover {
+      background-color: var(--text);
+      color: var(--bg);
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+    }
+
+    .hero-label {
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-family: var(--f-serif);
+      font-size: clamp(38px, 6vw, 64px);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+
+    .effective-date {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 48px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .intro-paragraph {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #222;
+      margin-bottom: 40px;
+    }
+
+    .section-block {
+      margin-bottom: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-num {
+      font-family: var(--f-serif);
+      font-style: italic;
+      font-size: 16px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-family: var(--f-sans);
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+
+    li {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--muted);
+    }
+
+    .contact-box {
+      background-color: #edeae4;
+      padding: 28px;
+      border-radius: 4px;
+      margin-top: 40px;
+    }
+
+    .contact-box h3 {
+      font-family: var(--f-sans);
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .contact-box a {
+      color: var(--text);
+      font-weight: 500;
+      text-decoration: underline;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 30px 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="./" class="logo">VESTURE</a>
+      <a href="./" class="back-btn">← Back to Vesture</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="hero-label">Legal & Data Transparency</div>
+    <h1>Privacy Policy</h1>
+    <div class="effective-date">Effective Date: September 2026 — Version 2.1</div>
+
+    <p class="intro-paragraph">
+      At Vesture, we respect your individuality and protect your personal aesthetic. This Privacy Policy details how we collect, process, and safeguard your data when using our digital wardrobe and styling platform.
+    </p>
+
+    <div class="section-block">
+      <div class="section-num">(01)</div>
+      <h2>Information We Collect</h2>
+      <p>We only gather data necessary to personalize your styling experience and digitize your wardrobe:</p>
+      <ul>
+        <li><strong>Wardrobe Imagery:</strong> Garment photos uploaded for background removal and cataloging.</li>
+        <li><strong>Styling Preferences:</strong> Aesthetic tags, color preferences, sizes, and occasion calendars.</li>
+        <li><strong>Technical Information:</strong> Device type, browser environment, and session data for performance optimization.</li>
+      </ul>
+    </div>
+
+    <div class="section-block">
+      <div class="section-num">(02)</div>
+      <h2>How We Use Your Data</h2>
+      <p>Your inputs directly drive your personal styling results:</p>
+      <ul>
+        <li>Generating intelligent outfit pairings based on current weather and your events.</li>
+        <li>Building your digital wardrobe archive and tracking garment wear rotation.</li>
+        <li>Improving styling models without exposing private user content.</li>
+      </ul>
+    </div>
+
+    <div class="section-block">
+      <div class="section-num">(03)</div>
+      <h2>Garment Photos & Privacy</h2>
+      <p>
+        Your wardrobe photos belong strictly to you. Uploaded clothing images are processed securely and are never sold, rented, or licensed to third-party advertisers or data brokers.
+      </p>
+    </div>
+
+    <div class="section-block">
+      <div class="section-num">(04)</div>
+      <h2>Your Rights & Data Portability</h2>
+      <p>
+        You have the unconditional right to export your digitized wardrobe catalog, update your styling profile, or request full deletion of all associated images and account records at any time.
+      </p>
+    </div>
+
+    <div class="contact-box">
+      <h3>Direct Inquiries</h3>
+      <p>For any privacy inquiries, data deletion requests, or questions regarding our styling practices, please reach out directly:</p>
+      <p><a href="mailto:vesture.stylist@gmail.com">vesture.stylist@gmail.com</a></p>
+    </div>
+  </main>
+
+  <footer>
+    Vesture ©2026. All rights reserved. Your digital wardrobe & personal stylist.
+  </footer>
+
+</body>
+</html>

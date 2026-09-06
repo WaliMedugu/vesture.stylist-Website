@@ -1,0 +1,314 @@
+================================================================================
+                         VESTURE - COMPLETE SITE TEXT CATALOG
+================================================================================
+Generated: 2026-09-06T11:48:44.237Z
+Application: Vesture (Digital Wardrobe & Personal Stylist App)
+Audience: Gen Z & Fashion Enthusiasts Worldwide
+Email: vesture.stylist@gmail.com
+Social Handles:
+  - TikTok: @vesture.stylist
+  - Instagram: @vesture.stylist
+  - Pinterest: vesture.stylist
+  - Twitter / X: @vesture_stylist
+================================================================================
+
+--------------------------------------------------------------------------------
+SECTION 1: HOME PAGE (index.html) - STRUCTURED BREAKDOWN
+--------------------------------------------------------------------------------
+
+[1.1 PAGE TITLE & METADATA]
+Title: Vesture — Your Digital Wardrobe & Personal Stylist
+Description: Digitize your closet, generate daily outfits, and curate archive fashion with Vesture.
+Brand Slogan: Outfits that define who you are, elevated every day.
+
+[1.2 SPLASH SCREEN & PRELOADER]
+Brand Logo: VESTURE
+Loading Percent Indicator: 0% -> 100%
+
+[1.3 TOP HEADER & NAVIGATION]
+Header Logo: VESTURE
+Nav Items:
+  - About
+  - Collections
+  - Contact
+  - Get App
+Contact Email: vesture.stylist@gmail.com
+Menu Button: Menu
+
+[1.4 FLYOUT MENU & COLLECTIONS OVERVIEW]
+Menu Header: Collections
+Download Link: Download Vesture
+Featured Media Card: CURATED CAPSULE (Hover: Explore)
+Capsules:
+  (1) Vintage Preppy & Knitwear — Daily Edit
+  (2) Monochrome Essentials — Streetwear
+  (3) Tailored Blouse & Flare — Evening
+  (4) Graffiti Denim & Jersey — Archive
+  (5) Statement Yellow & Camo — Utility
+
+[1.5 HERO / INTRO SECTION]
+Section Label: Home
+Copyright: Vesture ©2026
+Hero Headline:
+  OUTFITS THAT DEFINE WHO
+  ELEVATE YOUR EVERY DAY
+Intro Narrative:
+  "In a world overflowing with fleeting micro-trends and endless scrolling, Vesture
+   transforms your closet into a personal runway. Digitize your pieces in seconds,
+   curate cohesive outfits with 360° precision, and step out every day with effortless
+   confidence."
+Hero Brand Logo: VESTURE
+
+[1.6 ABOUT / PHILOSOPHY SECTION]
+Section Label: About Vesture
+Headline Banner:
+  STYLE THAT INVITES
+  YOU TO EXPRESS
+  YOUR IDENTITY
+  AND STAND OUT
+Narrative:
+  "Great style isn't about owning a thousand garments—it's about intentional curation
+   and knowing how to put pieces together. Whether you're blending archive grails with
+   elevated basics, tailoring vintage finds, or discovering your signature silhouette,
+   Vesture gives you a private stylist in your pocket to make every look distinctly yours."
+
+[1.7 COLLECTIONS & EDITORIAL CAPSULES]
+Section Label: Curated Looks
+Collection 01: Vintage Preppy & Knitwear
+  Description: Yellow knitted cardigan over collared shirt, tie, and tailored dark brown wide-leg trousers.
+  Category: Streetwear & Grail Edit & Academic Edit
+Collection 02: Monochrome Essentials
+  Description: All-black graphic tee, Fear of God Essentials shorts, and luxury LV Trainer sneakers.
+  Category: Daily Rotation
+Collection 03: Tailored Blouse & Flare
+  Description: Burgundy striped button-down blouse with wide flare denim and patent Lady Dior.
+  Category: Evening & Chic Edit
+Collection 04: Resort & City Escapes (Coming Soon)
+Collection 05: Monochrome Studio (Coming Soon)
+
+[1.8 FEATURE PILLARS / HOW VESTURE WORKS]
+Pillar 01: 360° Digital Wardrobe
+  "Snap and catalog your closet in seconds with automated background removal and smart category tagging."
+Pillar 02: Intelligent Fit Matching
+  "Daily outfit formulas tailored to today's weather forecast, your personal calendar, and your aesthetic."
+Pillar 03: Archive & Grail Inspo
+  "Discover how real tastemakers style vintage and contemporary pieces without buying fast fashion."
+Pillar 04: Capsule Packing & Rotations
+  "Plan your travel suitcases and weekly wardrobe rotations with zero stress and maximum versatility."
+
+[1.9 CALL TO ACTION]
+Headline: Elevate Your Wardrobe Today
+Subtext: Join the global community of fashion-forward creators mastering intentional style.
+Buttons / Links: Get App / Download Vesture
+
+[1.10 CONTACT & SOCIAL CHANNELS]
+Section Label: Connect with Vesture
+Headline: Have a collaboration, press inquiry, or styling question? Reach out directly:
+Email: vesture.stylist@gmail.com
+TikTok: @vesture.stylist (https://tiktok.com/@vesture.stylist)
+Instagram: @vesture.stylist (https://instagram.com/vesture.stylist)
+Pinterest: vesture.stylist (https://pinterest.com/vesture.stylist)
+Twitter / X: @vesture_stylist (https://x.com/vesture_stylist)
+
+[1.11 FOOTER & LEGAL]
+Footer Brand: Vesture
+Copyright: Vesture ©2026. All rights reserved.
+Legal Links:
+  - Privacy Policy: ./privacy-policy.html
+  - Cookie Policy: ./cookie-policy.html
+
+--------------------------------------------------------------------------------
+SECTION 2: PRIVACY POLICY (privacy-policy.html)
+--------------------------------------------------------------------------------
+
+Page Title: Privacy Policy — Vesture
+Back Link: ← Back to Vesture
+Effective Date: Effective Date: September 2026
+
+Summary:
+At Vesture, accessible from localhost:5155, your privacy is our utmost priority.
+This Privacy Policy explains what personal data we collect, why we collect it, and
+how your information is protected when using our styling application and website.
+
+Sections Covered:
+  1. Information We Collect (Wardrobe photos, account info, styling preferences, usage data)
+  2. How We Use Your Information (Generating outfit recommendations, digitizing pieces, customer support)
+  3. AI Styling & Photo Privacy (User garment photos remain private and are never sold to advertisers)
+  4. Data Sharing & Third Parties (We do not sell personal data; limited trusted providers for hosting & email)
+  5. Your Rights (Access, update, export, or delete your digitized wardrobe and account at any time)
+  6. Contact Us (Direct contact at vesture.stylist@gmail.com)
+
+--------------------------------------------------------------------------------
+SECTION 3: COOKIE POLICY (cookie-policy.html)
+--------------------------------------------------------------------------------
+
+Page Title: Cookie Policy — Vesture
+Back Link: ← Back to Vesture
+Effective Date: Effective Date: September 2026
+
+Summary:
+This Cookie Policy explains how Vesture uses cookies and similar browser storage
+technologies to remember your styling sessions, active themes, and deliver a smooth,
+high-performance interactive experience.
+
+Cookie Categories:
+  - Strictly Necessary Cookies (Session management, theme preferences, core UI animations)
+  - Analytics & Performance (Understanding feature engagement and load optimization)
+  - Functional Preferences (Remembering user layout and filter preferences)
+  - Managing Cookies (Instructions on controlling or clearing browser storage)
+  - Contact (vesture.stylist@gmail.com)
+
+--------------------------------------------------------------------------------
+SECTION 4: RAW TEXT NODES EXTRACTED FROM index.html (IN DOM ORDER)
+--------------------------------------------------------------------------------
+
+[Node 001] Vesture — Your Digital Wardrobe & Personal Stylist
+[Node 002] Vesture
+[Node 003] ·
+[Node 004] boring
+[Node 005] ®
+[Node 006] Menu
+[Node 007] 0%
+[Node 008] About
+[Node 009] Collections
+[Node 010] Contact
+[Node 011] Get App
+[Node 012] CURATED CAPSULE
+[Node 013] Collections
+[Node 014] View All
+[Node 015] (1)
+[Node 016] Street Luxe & Tailoring
+[Node 017] Evening
+[Node 018] (2)
+[Node 019] Elevated Minimalist
+[Node 020] Daily Rotation
+[Node 021] (3)
+[Node 022] Casual Archive Edit
+[Node 023] Evening
+[Node 024] (4)
+[Node 025] Resort & City Escapes
+[Node 026] Coming Soon
+[Node 027] (5)
+[Node 028] Monochrome Studio
+[Node 029] Coming Soon
+[Node 030] vesture.stylist@gmail.com
+[Node 031] About
+[Node 032] Collections
+[Node 033] Contact
+[Node 034] Get App
+[Node 035] Home
+[Node 036] Vesture ©2026
+[Node 037] Outfits
+[Node 038] that define
+[Node 039] who
+[Node 040] elevate
+[Node 041] your
+[Node 042] every day
+[Node 043] In a world overflowing with fleeting micro-trends and endless scrolling, Vesture transforms your closet into a personal runway. Digitize your pieces in seconds, curate cohesive outfits with 360° precision, and step out every day with effortless confidence.
+[Node 044] Vesture
+[Node 045] ·
+[Node 046] boring
+[Node 047] ®
+[Node 048] About Vesture
+[Node 049] Style that invites
+[Node 050] you
+[Node 051] to express
+[Node 052] your identity
+[Node 053] and stand out
+[Node 054] Great style isn't about owning a thousand garments—it's about intentional curation and knowing how to put pieces together. Whether you're blending archive grails with elevated basics, tailoring vintage finds, or discovering your signature silhouette, Vesture gives you a private stylist in your pocket to make every look distinctly yours.
+[Node 055] No more chaotic mornings or staring at a full closet with "nothing to wear". With Vesture®, scan your wardrobe in seconds, unlock intelligent weather-ready pairings, and organize your seasonal rotation with zero friction. Personal fashion should feel inspiring, sustainable, and undeniably fun.
+[Node 056] PHILOSOPHY
+[Node 057] PHILOSOPHY
+[Node 058] PHILOSOPHY
+[Node 059] Timeless aesthetic sensibility meets modern versatility. We spotlight proportion, clean silhouettes, and cohesive palettes so every outfit you step out in feels intentional, expressive, and effortlessly sharp.
+[Node 060] 01
+[Node 061] CURATION
+[Node 062] Timeless aesthetic sensibility meets modern versatility. We spotlight proportion, clean silhouettes, and cohesive palettes so every outfit you step out in feels intentional, expressive, and effortlessly sharp.
+[Node 063] Intelligent outfit coordination synced to your daily plans, social calendar, and live local weather. From rooftop evenings and college studios to airport transits and weekend pop-ups, you're always fit-checked and ready.
+[Node 064] Maximum rotation with zero waste. Vesture unlocks unexpected pairings from the pieces you already cherish, keeping your style circular, conscious, and infinitely versatile.
+[Node 065] Intelligent outfit coordination synced to your daily plans, social calendar, and live local weather. From rooftop evenings and college studios to airport transits and weekend pop-ups, you're always fit-checked and ready.
+[Node 066] 02
+[Node 067] ADAPTABILITY
+[Node 068] Maximum rotation with zero waste. Vesture unlocks unexpected pairings from the pieces you already cherish, keeping your style circular, conscious, and infinitely versatile.
+[Node 069] 03
+[Node 070] SUSTAINABILITY
+[Node 071] Collections
+[Node 072] Style is not about chasing every passing trend on your feed: it is personal, creative, versatile, and deeply fun. At Vesture, we don't just organize clothes—we amplify your creative voice.
+[Node 073] 2024
+[Node 074] NIGHT OUT
+[Node 075] 01
+[Node 076] View Outfit
+[Node 077] Street Luxe & Tailoring
+[Node 078] 2024
+[Node 079] NIGHT OUT
+[Node 080] 02
+[Node 081] View Outfit
+[Node 082] Elevated Minimalist
+[Node 083] 2023
+[Node 084] NIGHT OUT
+[Node 085] 03
+[Node 086] View Outfit
+[Node 087] Casual Archive Edit
+[Node 088] 2024
+[Node 089] WEEKEND VIBE
+[Node 090] 04
+[Node 091] Coming Soon
+[Node 092] Resort & City Escapes
+[Node 093] 2024
+[Node 094] TIMELESS BASICS
+[Node 095] 05
+[Node 096] Coming Soon
+[Node 097] Monochrome Studio
+[Node 098] View All Collections
+[Node 099] Collections
+[Node 100] Who said
+[Node 101] Que el
+[Node 102] placer
+[Node 103] No puede ser
+[Node 104] Funcional
+[Node 105] We believe dressing well should feel natural, creative, and completely unforced. Blend high-end tailoring with vintage streetwear, layer unexpected textures, and express your mood without second-guessing. Your personal aesthetic, elevated effortlessly.
+[Node 106] (Get Styled)
+[Node 107] ELEVATE
+[Node 108] YOUR WARDROBE
+[Node 109] Exclusividad En
+[Node 110] Su máxima
+[Node 111] expresión
+[Node 112] Join fashion-forward thinkers worldwide building smarter, more aesthetic wardrobes. From quick closet digitization to daily fit recommendations, Vesture makes personal styling intuitive, playful, and effortlessly sharp. Claim your early access today.
+[Node 113] vesture.stylist@gmail.com
+[Node 114] Request Early Access
+[Node 115] TikTok (@vesture.stylist)
+[Node 116] |
+[Node 117] Instagram (@vesture.stylist)
+[Node 118] |
+[Node 119] Pinterest (vesture.stylist)
+[Node 120] |
+[Node 121] Twitter/X (@vesture_stylist)
+[Node 122] |
+[Node 123] Email (vesture.stylist@gmail.com)
+[Node 124] (2024)
+[Node 125] Explore
+[Node 126] CURATED CAPSULE
+[Node 127] Personalized curation and effortless fit checks
+[Node 128] designed for your everyday aesthetic
+[Node 129] VESTURE ©2026
+[Node 130] Privacy Policy
+[Node 131] Cookie Policy
+[Node 132] Terms of Service
+[Node 133] Home
+[Node 134] (Get Styled)
+[Node 135] (GET STYLED)
+[Node 136] Desbloquea
+[Node 137] your wardrobe
+[Node 138] Name
+[Node 139] Phone
+[Node 140] Email
+[Node 141] Message
+[Node 142] I accept the
+[Node 143] Privacy Policy
+[Node 144] y el
+[Node 145] Terms of Service
+[Node 146] Controller: Vesture Personal Styling. Purpose: To respond to your inquiry and coordinate your personalized styling access. You may exercise your rights of access, rectification, deletion, and portability at any time by contacting vesture.stylist@gmail.com.
+
+================================================================================
+                           END OF SITE TEXT CATALOG
+================================================================================
